@@ -1,0 +1,25 @@
+@use "../presets" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: $font-family;
+  font-size: $font-size-16;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.body {
+  color: $color-black;
+}
+
+a {
+  text-decoration: none;
+  color: $color-black;
+}
