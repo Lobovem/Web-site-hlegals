@@ -1,0 +1,81 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.header-navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: $gap-md 0px;
+
+  &__contact {
+    display: flex;
+    gap: $gap-sm;
+    align-items: flex-end;
+  }
+
+  &__lang {
+    font-weight: $font-weight-700;
+    font-size: $font-size-12;
+    line-height: 14px;
+    letter-spacing: 1px;
+    color: $color-white;
+    text-transform: uppercase;
+    padding: 5px;
+    &--active {
+      background: $color-accent;
+      border-radius: 8px;
+    }
+  }
+
+  &__wrap {
+  }
+
+  &__address {
+    line-height: 19px;
+    color: $color-white;
+    padding: 5px;
+    margin-left: -7px;
+  }
+
+  &__address::before {
+    content: "\2022";
+    color: $color-grey-bg-separator;
+    margin-right: 7px;
+    display: inline-block;
+    font-size: 30px;
+  }
+
+  &__phone {
+    font-weight: $font-weight-700;
+    line-height: 19px;
+    color: $color-white;
+    padding: 5px;
+    margin-left: -10px;
+  }
+
+  &__phone::before {
+    content: "\2022";
+    color: $color-grey-bg-separator;
+    margin-right: 7px;
+    display: inline-block;
+    font-size: 23px;
+  }
+
+  &__social {
+    margin-left: -7px;
+  }
+
+  &__social::before {
+    content: "\2022";
+    color: $color-grey-bg-separator;
+    margin-right: 7px;
+    display: inline-block;
+    font-size: 30px;
+  }
+
+  &__social-img {
+  }
+
+  &__menu {
+  }
+}

@@ -1,0 +1,28 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.navbar {
+  // margin-top: -25px;
+  &__burger {
+  }
+
+  &__burger-row {
+  }
+
+  &__list {
+    display: flex;
+    justify-content: end;
+    @include unlist;
+    gap: $gap-sm;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    font-size: $font-size-18;
+    line-height: 21px;
+    color: $color-white;
+    padding: 5px 0 5px 5px;
+  }
+}
