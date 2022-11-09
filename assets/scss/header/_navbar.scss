@@ -2,6 +2,11 @@
 @use "../mixins" as *;
 
 .navbar {
+  grid-area: burger;
+
+  @include sm {
+    margin-left: auto;
+  }
   &__burger {
   }
 
@@ -9,20 +14,38 @@
   }
 
   &__list {
+    grid-area: menu;
     display: flex;
-    justify-content: end;
     @include unlist;
     gap: $gap-sm;
+
+    @include md-min {
+      justify-content: end;
+    }
+
+    @include md {
+      margin-left: -5px;
+    }
+    @include sm {
+      display: none;
+    }
   }
 
   &__item {
   }
 
   &__link {
-    font-size: $font-size-18;
-    line-height: 21px;
     color: $color-white;
     padding: 5px 0 5px 5px;
+
+    @include lg-min {
+      font-size: $font-size-18;
+      line-height: 21px;
+    }
+
+    @include lg {
+      font-size: $font-size-16;
+    }
   }
 }
 
@@ -34,7 +57,7 @@
 
   cursor: pointer;
 
-  @include xl-min {
+  @include sm-min {
     display: none;
   }
 
