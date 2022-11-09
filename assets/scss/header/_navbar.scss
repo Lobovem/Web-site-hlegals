@@ -1,6 +1,7 @@
 @use "../presets" as *;
 @use "../mixins" as *;
 
+//пересмотреть положение бургера
 .navbar {
   grid-area: burger;
 
@@ -37,14 +38,13 @@
   &__link {
     color: $color-white;
     padding: 5px 0 5px 5px;
+    font-size: $font-size-18;
+    line-height: 21px;
+  }
 
-    @include lg-min {
-      font-size: $font-size-18;
-      line-height: 21px;
-    }
-
+  @include lg-min {
     @include lg {
-      font-size: $font-size-16;
+      // font-size: $font-size-16;
     }
   }
 }
@@ -61,6 +61,11 @@
     display: none;
   }
 
+  @include xs {
+    width: 18px;
+    height: 30px;
+  }
+
   span {
     position: absolute;
     left: 0;
@@ -74,8 +79,11 @@
     transform: rotate(0deg);
 
     opacity: 1;
-    border-radius: 5px;
     background-color: $color-white;
+
+    @include xs {
+      height: 6%;
+    }
 
     &:nth-of-type(1) {
       top: 0;
@@ -83,10 +91,18 @@
 
     &:nth-of-type(2) {
       top: 12px;
+
+      @include xs {
+        top: 6px;
+      }
     }
 
     &:nth-of-type(3) {
       top: 24px;
+
+      @include xs {
+        top: 12px;
+      }
     }
   }
 

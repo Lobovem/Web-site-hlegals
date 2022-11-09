@@ -22,10 +22,8 @@
     justify-content: flex-end;
   }
 
-  @include md {
-    // flex-direction: column;
-    // align-items: end;
-    // margin-bottom: 10px;
+  @include sm {
+    justify-content: space-between;
   }
 
   &__lang {
@@ -36,19 +34,27 @@
     color: $color-white;
     text-transform: uppercase;
     grid-area: lang;
+    padding: 3px;
 
-    @include lg-min {
-      font-size: $font-size-12;
+    @include sm {
+      color: $color-grey-bg-text;
     }
 
-    @include lg {
-      font-size: $font-size-10;
-    }
     &--active {
       background: $color-accent;
       border-radius: 8px;
       padding: 5px;
+
+      @include sm {
+        color: $color-white;
+      }
     }
+    // @include lg-min {
+    //   font-size: $font-size-12;
+    // }
+
+    // @include lg {
+    // }
   }
 
   &__wrap {
@@ -61,7 +67,11 @@
     grid-area: adr;
 
     @include lg {
-      font-size: $font-size-14;
+      // font-size: $font-size-14;
+    }
+
+    @include sm {
+      display: none;
     }
   }
 
@@ -73,22 +83,27 @@
     margin-left: -10px;
     grid-area: phone;
 
-    @include lg {
-      font-size: $font-size-14;
+    @include sm {
+      color: $color-grey-bg-text;
     }
   }
 
   &__phone::before {
-    content: "\2022";
-    color: $color-grey-bg-separator;
-    margin-right: 7px;
-    display: inline-block;
-    font-size: 23px;
+    @include sm-min {
+      content: "\2022";
+      color: $color-grey-bg-separator;
+      margin-right: 7px;
+      display: inline-block;
+      font-size: 23px;
+    }
   }
 
   &__social {
     margin-left: -7px;
     grid-area: social;
+    @include sm {
+      display: none;
+    }
   }
 
   &__social::before {
