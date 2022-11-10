@@ -1,0 +1,20 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.Benefits {
+  background: linear-gradient(
+    228.57deg,
+    #323264 11.93%,
+    #323264 60%,
+    #643e72 87.46%
+  );
+  border-radius: 0px 0px 12px 12px;
+  @include xx {
+    background: linear-gradient(
+      256.57deg,
+      #323264 11.93%,
+      #323264 61%,
+      #643e72 83.46%
+    );
+  }
+}

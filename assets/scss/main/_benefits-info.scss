@@ -1,0 +1,59 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.benefits-info {
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  &__list {
+    border-right: 4px solid $color-grey-bg-separator;
+    @include unlist;
+    padding-right: 40px;
+    max-width: 530px;
+
+    // transform: rotate(-90deg);
+  }
+
+  &__item {
+    text-align: right;
+    padding: 11px;
+  }
+
+  &__link {
+    font-size: $font-size-42;
+    line-height: 50px;
+    color: $color-grey-bg-text;
+    font-weight: $font-weight-700;
+
+    &--accent {
+      background: linear-gradient(90.13deg, #ef8080 0.84%, #f0145a 99.96%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      // background-clip: text;
+      // text-fill-color: transparent;
+      // border-right: 4px solid $color-accent;
+    }
+  }
+
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 630px;
+    padding-left: 40px;
+  }
+
+  &__title {
+    font-size: $font-size-32;
+    line-height: 38px;
+    color: $color-white;
+  }
+
+  &__description {
+    font-size: $font-size-21;
+    line-height: 30px;
+    color: $color-white;
+  }
+}

@@ -1,0 +1,68 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.item-benefits {
+  &__item {
+  }
+
+  &__picture {
+    display: flex;
+
+    @include sm-min {
+      flex-direction: column;
+      margin-bottom: 20px;
+      gap: $gap;
+    }
+
+    @include sm {
+      align-items: center;
+      margin-bottom: 10px;
+      gap: $gap-sm;
+    }
+  }
+
+  &__img-box {
+    width: 92px;
+    height: 92px;
+    background: #ffffff;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include sm {
+      max-width: 64px;
+      height: 64px;
+      border-radius: 18px;
+    }
+  }
+  &__img {
+    @include sm {
+      width: 70%;
+    }
+  }
+
+  &__title {
+    font-size: $font-size-24;
+    line-height: 28px;
+    color: $color-active-regular;
+    order: 1;
+    font-weight: normal;
+
+    @include sm {
+      font-size: $font-size-18;
+      line-height: 21px;
+    }
+  }
+
+  &__description {
+    font-size: $font-size-18;
+    line-height: 26px;
+    color: $color-white;
+
+    @include sm {
+      font-size: $font-size-16;
+      line-height: 22px;
+    }
+  }
+}
