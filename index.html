@@ -13,25 +13,30 @@
 
   <header class="header">
     <div class="container">
-      <div class="header__wrap-grid">
+      <div class="header__grid">
         <div class="header__logo">
           <img class="header__logo-img" src="assets/img/Logo-header.svg" alt="header__logo-img">
         </div>
 
-        <div class="header-navbar-contact contacts">
-          <div class="contacts__lang-wrap">
-            <a class="contacts__lang contacts__lang--active" href="">УК</a>
-            <a class="contacts__lang" href="">РУ</a>
-            <a class="contacts__lang" href="">EN</a>
+        <nav class="header-contacts contacts">
+          <div class="contacts__lang">
+            <a class="contacts__lang-link contacts__lang-link--active" href="">УК</a>
+            <a class="contacts__lang-link" href="">РУ</a>
+            <a class="contacts__lang-link" href="">EN</a>
           </div>
 
-          <a class="contacts__address" href="">Одеса, Адміральський пр., 3</a>
-          <a class="contacts__phone" href="tel:380503901591"> +38 (050) 390 15 91</a>
-          <a class="contacts__social">
-            <img class="contacts__social-img" src="assets/img/facebook.svg" alt="facebook">
-          </a>
-        </div>
-        <div class="header-navbar-menu navbar">
+          <address class="contacts__address">
+            <a class="contacts__address-link" href="">Одеса, Адміральський пр., 3</a>
+          </address>
+          <div class="contacts__phone">
+            <a class="contacts__phone-link" href="tel:+380503901591">+38 (050) 390 15 91</a>
+          </div>
+          <div class="contacts__social">
+            <a class="contacts__social-link"><img class="contacts__social-img" src="assets/img/facebook.svg"
+                alt="facebook"></a>
+          </div>
+        </nav>
+        <nav class="header-navbar-menu navbar">
           <div class="navbar__burger">
             <span class="navbar__burger-row"></span>
             <span class="navbar__burger-row"></span>
@@ -45,7 +50,7 @@
             <li class="navbar__item"><a class="navbar__link" href="">публікації</a></li>
             <li class="navbar__item"><a class="navbar__link" href="">контакти</a></li>
           </ul>
-        </div>
+        </nav>
       </div>
 
       <div class="header__picture">
@@ -54,7 +59,7 @@
       </div>
 
       <div class="header__scroll">
-        <a class="header__scroll-down"><img src="assets/img/Scroll-down.svg" alt="Scroll down"></a>
+        <img class="header__scroll-img" src="assets/img/Scroll-down.svg" alt="Scroll-down">
       </div>
 
     </div>
