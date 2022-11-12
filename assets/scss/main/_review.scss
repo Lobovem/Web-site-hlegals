@@ -1,0 +1,30 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.review {
+  &__container {
+    background: $color-grey-bg;
+    border-radius: 12px;
+  }
+
+  &__foto {
+  }
+
+  &__img {
+  }
+
+  &__link-wrap {
+  }
+
+  &__link {
+  }
+
+  &__title {
+  }
+
+  &__author {
+  }
+
+  &__job {
+  }
+}
