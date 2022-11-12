@@ -1,2 +1,23 @@
 @use "../presets" as *;
 @use "../mixins" as *;
+
+.benefits-button {
+  @include lg {
+    display: flex;
+    gap: $gap-md;
+    justify-content: center;
+    margin-bottom: 44px;
+    &__link {
+      background: $color-active-regular;
+      width: 16px;
+      height: 16px;
+      border-radius: 10px;
+      opacity: 0.2;
+
+      &--active {
+        background: $color-active-regular;
+        opacity: 1;
+      }
+    }
+  }
+}

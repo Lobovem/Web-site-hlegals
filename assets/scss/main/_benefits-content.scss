@@ -3,28 +3,28 @@
 
 .benefits-content {
   &__link {
-    position: relative;
-    font-size: $font-size-14;
-    line-height: 17px;
-    //пересмотреть, что с spacing, должно быть 2
-    letter-spacing: 1px;
-    font-weight: $font-weight-500;
-    text-transform: uppercase;
-    color: $color-white;
-    opacity: 0.5;
-    display: block;
-    padding: 2px 2px 2px 0;
+    // position: relative;
+    // font-size: $font-size-14;
+    // line-height: 17px;
+    // //пересмотреть, что с spacing, должно быть 2
+    // letter-spacing: 1px;
+    // font-weight: $font-weight-500;
+    // text-transform: uppercase;
+    // color: $color-white;
+    // opacity: 0.5;
+    // display: block;
+    // padding: 2px 2px 2px 0;
 
-    &::after {
-      content: "";
-      background-image: url(../img/arrow-right.svg);
-      background-repeat: no-repeat;
-      position: absolute;
-      left: 82px;
-      right: 0;
-      top: 5px;
-      bottom: 0;
-    }
+    // &::after {
+    //   content: "";
+    //   background-image: url(../img/arrow-right.svg);
+    //   background-repeat: no-repeat;
+    //   position: absolute;
+    //   left: 82px;
+    //   right: 0;
+    //   top: 5px;
+    //   bottom: 0;
+    // }
   }
 
   &__title {

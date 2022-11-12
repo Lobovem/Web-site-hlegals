@@ -9,7 +9,7 @@
   @include md-min {
     justify-content: flex-end;
   }
-  @include md-sm {
+  @include sm-min {
     gap: $gap-md;
   }
 
