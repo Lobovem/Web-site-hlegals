@@ -6,7 +6,7 @@
   min-height: 800px;
   @include md-min {
     padding-top: 42px;
-    background: url(../img/bg-logo.svg) center 48% no-repeat,
+    background: url(../img/bg-logo.svg) center 98% no-repeat,
       linear-gradient(42.01deg, #323264 14.33%, #323264 60.39%, #7a425e 87.53%)
         center no-repeat;
   }
@@ -99,7 +99,7 @@
     // width: 595px;
 
     @include md-min {
-      height: 687px;
+      height: 500px;
     }
     @include md {
       position: absolute;

@@ -21,7 +21,6 @@
     line-height: 14px;
     letter-spacing: 1px;
     color: $color-white;
-    text-transform: uppercase;
     grid-area: lang;
     padding: 3px;
 
@@ -70,30 +69,12 @@
     }
   }
 
-  &__phone::before {
-    @include sm-min {
-      content: "\2022";
-      color: $color-grey-bg-separator;
-      margin-right: 7px;
-      display: inline-block;
-      font-size: 23px;
-    }
-  }
-
   &__social {
     margin-left: -7px;
     grid-area: social;
     @include sm {
       display: none;
     }
-  }
-
-  &__social::before {
-    content: "\2022";
-    color: $color-grey-bg-separator;
-    margin-right: 7px;
-    display: inline-block;
-    font-size: 30px;
   }
 
   &__social-img {
