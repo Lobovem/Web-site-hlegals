@@ -112,8 +112,6 @@
   }
 
   &__img {
-    // width: 595px;
-
     @include sm-min {
       height: 500px;
     }
@@ -125,7 +123,6 @@
     }
 
     @include sm {
-      // width: 371px;
       top: 26%;
     }
   }
@@ -147,8 +144,5 @@
     @include sm {
       top: 74%;
     }
-  }
-
-  &__scroll-img {
   }
 }
