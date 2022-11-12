@@ -4,12 +4,18 @@
 .benefits-info {
   display: flex;
   align-items: center;
-  padding-top: 80px;
   padding-bottom: 80px;
 
   @include lg {
     flex-wrap: wrap;
     padding-bottom: 30px;
+  }
+
+  @include sm-min {
+    padding-top: 80px;
+  }
+  @include sm {
+    padding-bottom: 20px;
   }
 
   &__list {
@@ -55,17 +61,28 @@
         color: $color-grey-bg-text;
         font-weight: $font-weight-700;
       }
+
+      @include sm {
+        font-size: $font-size-14;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
     }
   }
 
   &__text-box {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: $gap;
 
     @include lg-min {
       padding-left: 40px;
       max-width: 630px;
+    }
+
+    @include sm {
+      margin-top: -8px;
+      gap: $gap-md;
     }
   }
 
@@ -73,12 +90,22 @@
     font-size: $font-size-32;
     line-height: 38px;
     color: $color-white;
+
+    @include sm {
+      font-size: $font-size-22;
+      line-height: 26px;
+    }
   }
 
   &__description {
     font-size: $font-size-21;
     line-height: 30px;
     color: $color-white;
+
+    @include sm {
+      font-size: $font-size-18;
+      line-height: 26px;
+    }
   }
 
   &__button {
