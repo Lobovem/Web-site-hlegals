@@ -49,6 +49,7 @@
   }
 
   &--color {
+    position: relative;
     color: $color-active-regular;
     font-weight: $font-weight-700;
     opacity: 1;

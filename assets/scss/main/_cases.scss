@@ -1,0 +1,26 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.cases {
+  &__container {
+    background: $color-grey-bg;
+    // border: 1px solid $color-white;
+    // border-radius: 0px;
+    display: grid;
+    grid-template-columns: 433px 454px 433px;
+    grid-auto-rows: minmax(198px, auto);
+    // grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  &__item {
+  }
+
+  &__title {
+  }
+
+  &__item-title {
+  }
+
+  &__item-description {
+  }
+}
