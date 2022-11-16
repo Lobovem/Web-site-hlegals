@@ -26,6 +26,8 @@
 
 .section-link {
   position: relative;
+  margin-bottom: 2px;
+  display: inline-block;
   font-size: $font-size-14;
   line-height: 17px;
   //пересмотреть, что с spacing, должно быть 2
@@ -34,17 +36,16 @@
   text-transform: uppercase;
   color: $color-white;
   opacity: 0.5;
-  display: block;
-  padding: 2px 2px 2px 0;
+  padding: 2px 40px 2px 0;
 
   &::after {
     content: "";
     background-image: url(../img/arrow-right.svg);
     background-repeat: no-repeat;
     position: absolute;
-    left: 82px;
-    right: 0;
-    top: 4px;
+    padding-right: 20px;
+    right: 15px;
+    top: 5px;
     bottom: 0;
   }
 
@@ -59,10 +60,10 @@
       background-image: url(../img/arrow-right-blue.svg);
       background-repeat: no-repeat;
       position: absolute;
-      left: 90px;
-      right: 0;
+      right: 15px;
       top: 5px;
       bottom: 0;
+      padding-right: 20px;
     }
   }
 }

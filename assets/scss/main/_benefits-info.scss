@@ -90,10 +90,12 @@
     font-size: $font-size-32;
     line-height: 38px;
     color: $color-white;
+    font-weight: $font-weight-500;
 
     @include sm {
       font-size: $font-size-22;
       line-height: 26px;
+      font-weight: $font-weight-500;
     }
   }
 

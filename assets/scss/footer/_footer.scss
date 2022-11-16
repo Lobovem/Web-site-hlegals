@@ -41,6 +41,10 @@
     color: $color-main;
   }
 
+  &__adress-title {
+    font-weight: $font-weight-700;
+  }
+
   &__adress-link {
     font-size: $font-size-12;
     line-height: 14px;

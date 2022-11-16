@@ -55,4 +55,10 @@
       width: 80vw;
     }
   }
+
+  @include sm {
+    margin-top: -160px;
+    padding-top: 22px;
+    margin-bottom: 40px;
+  }
 }
