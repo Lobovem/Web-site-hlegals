@@ -11,19 +11,22 @@
     padding-top: 48px;
 
     background: url(../img/bg-logo.svg) center 98% no-repeat,
-    linear-gradient(42.01deg, #323264 14.33%, #323264 60.39%, #7a425e 87.53%)
-    center no-repeat;
+      linear-gradient(42.01deg, #323264 14.33%, #323264 60.39%, #7a425e 87.53%)
+        center no-repeat;
   }
-  @include md {
-    padding-top: 22px;
 
+  @include md {
     background: linear-gradient(
-    42.01deg,
-    #323264 14.33%,
-    #323264 51.39%,
-    #7a425e 87.53%
-    )
-    center no-repeat;
+        42.01deg,
+        #323264 14.33%,
+        #323264 51.39%,
+        #7a425e 87.53%
+      )
+      center no-repeat;
+    padding-top: 22px;
+  }
+  @include sm {
+    min-height: 650px;
   }
 
   &::after {
@@ -38,8 +41,8 @@
     background: linear-gradient(to top, #323264 0, transparent 100%);
 
     @include sm {
-      top: 48%;
-      bottom: 20%;
+      top: 60%;
+      bottom: 0;
     }
   }
 
@@ -189,12 +192,12 @@
       position: absolute;
 
       width: 100%;
-      height: 62%;
+      height: 500px;
 
       object-fit: cover;
     }
     @include sm {
-      top: 26%;
+      top: 32%;
     }
   }
 
@@ -214,7 +217,7 @@
       top: 84%;
     }
     @include sm {
-      top: 72%;
+      top: 89%;
     }
   }
 }
