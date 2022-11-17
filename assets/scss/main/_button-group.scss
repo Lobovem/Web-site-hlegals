@@ -3,19 +3,22 @@
 
 .button-group {
   display: flex;
-  gap: $gap-md;
   justify-content: center;
+
   margin-bottom: 44px;
+
+  gap: $gap-md;
   &__link {
-    background: $color-active-regular;
     width: 16px;
     height: 16px;
-    border-radius: 10px;
+
     opacity: 0.2;
+    border-radius: 10px;
+    background: $color-active-regular;
 
     &--active {
-      background: $color-active-regular;
       opacity: 1;
+      background: $color-active-regular;
     }
   }
 }

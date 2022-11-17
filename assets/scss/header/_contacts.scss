@@ -3,37 +3,40 @@
 
 .contacts {
   display: flex;
-  grid-area: cont;
   align-items: center;
 
+  grid-area: cont;
   @include md-min {
     justify-content: flex-end;
   }
   @include sm-min {
     gap: $gap-md;
   }
-
   @include sm {
     justify-content: space-between;
   }
 
   &__lang-link {
-    font-weight: $font-weight-700;
-    font-size: $font-size-12;
-    line-height: 14px;
-    letter-spacing: 1px;
-    color: $color-white;
-    grid-area: lang;
     padding: 2px;
 
+    letter-spacing: 1px;
+
+    color: $color-white;
+
+    font-size: $font-size-12;
+    font-weight: $font-weight-700;
+    line-height: 14px;
+
+    grid-area: lang;
     @include sm {
       color: $color-grey-bg-text;
     }
 
     &--active {
-      background: $color-accent;
-      border-radius: 8px;
       padding: 5px;
+
+      border-radius: 8px;
+      background: $color-accent;
 
       @include sm {
         color: $color-white;
@@ -42,10 +45,12 @@
   }
 
   &__address-link {
-    line-height: 19px;
-    color: $color-white;
     padding: 5px;
+
+    color: $color-white;
+
     font-style: normal;
+    line-height: 19px;
 
     @include sm {
       display: none;
@@ -59,27 +64,25 @@
   }
 
   &__phone-link {
-    font-weight: $font-weight-700;
-    line-height: 19px;
-    color: $color-white;
     padding: 5px;
 
+    color: $color-white;
+
+    font-weight: $font-weight-700;
+    line-height: 19px;
+
     @include sm {
-      color: $color-grey-bg-text;
       padding: 5px 0 5px 5px;
+
+      color: $color-grey-bg-text;
     }
   }
 
   &__social-link {
     padding: 5px 0 5px 5px;
+
     @include sm {
       display: none;
     }
-  }
-
-  &__social-img {
-  }
-
-  &__menu {
   }
 }

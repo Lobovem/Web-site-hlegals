@@ -4,26 +4,25 @@
 //пересмотреть положение бургера
 .navbar {
   grid-area: burger;
-
   @include sm {
     margin-left: auto;
   }
-  &__burger {
-  }
 
-  &__burger-row {
+  @include lg-min {
+    @include lg {
+      // font-size: $font-size-16;
+    }
   }
 
   &__list {
-    grid-area: menu;
     display: flex;
-    @include unlist;
-    gap: $gap-sm;
 
+    gap: $gap-sm;
+    grid-area: menu;
+    @include unlist;
     @include md-min {
       justify-content: end;
     }
-
     @include md {
       margin-left: -5px;
     }
@@ -32,19 +31,16 @@
     }
   }
 
-  &__item {
-  }
-
   &__link {
-    color: $color-white;
     padding: 5px 0 5px 5px;
+
+    color: $color-white;
+
     font-size: $font-size-18;
     line-height: 21px;
-  }
 
-  @include lg-min {
-    @include lg {
-      // font-size: $font-size-16;
+    &--accent {
+      text-decoration: underline;
     }
   }
 }
@@ -52,7 +48,10 @@
 .navbar__burger {
   position: relative;
 
-  width: 40px;
+  // width: 40px;
+  // height: 30px;
+
+  width: 18px;
   height: 30px;
 
   cursor: pointer;
@@ -60,7 +59,6 @@
   @include sm-min {
     display: none;
   }
-
   @include xs {
     width: 18px;
     height: 30px;
@@ -73,7 +71,9 @@
     display: block;
 
     width: 100%;
-    height: 5px;
+    // height: 5px;
+
+    height: 6%;
 
     transition: 0.25s ease-in-out;
     transform: rotate(0deg);
@@ -90,7 +90,8 @@
     }
 
     &:nth-of-type(2) {
-      top: 12px;
+      // top: 12px;
+      top: 6px;
 
       @include xs {
         top: 6px;
@@ -98,7 +99,8 @@
     }
 
     &:nth-of-type(3) {
-      top: 24px;
+      // top: 24px;
+      top: 12px;
 
       @include xs {
         top: 12px;
@@ -108,7 +110,7 @@
 
   &.active span {
     &:nth-of-type(1) {
-      top: 12px;
+      top: 6px;
 
       transform: rotate(135deg);
     }
@@ -120,7 +122,7 @@
     }
 
     &:nth-of-type(3) {
-      top: 12px;
+      top: 6px;
 
       transform: rotate(-135deg);
     }

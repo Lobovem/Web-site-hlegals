@@ -3,28 +3,28 @@
 
 .review {
   &__container {
-    background: $color-grey-bg;
-    border-radius: 12px;
     display: grid;
+
     margin-bottom: 20px;
     padding-right: 20px;
 
-    @include md-min {
-      grid-template-columns: 1fr 2fr;
-      gap: 0 $gap-xl;
-    }
+    border-radius: 12px;
+    background: $color-grey-bg;
 
+    @include md-min {
+      gap: 0 $gap-xl;
+      grid-template-columns: 1fr 2fr;
+    }
     @include md {
       padding-left: 20px;
     }
-
     @include md-sm {
       grid-template-areas: "foto" "content";
     }
-
     @include sm {
-      grid-template-areas: "content";
       margin-bottom: 15px;
+
+      grid-template-areas: "content";
     }
   }
 
@@ -32,6 +32,7 @@
     @include md {
       display: flex;
       justify-content: center;
+
       grid-area: foto;
     }
   }
@@ -40,11 +41,9 @@
     @include md-min {
       width: 100%;
     }
-
     @include md {
       width: 50%;
     }
-
     @include sm {
       display: none;
     }
@@ -60,10 +59,8 @@
     @include md {
       grid-area: content;
     }
-
     @include sm {
       padding-top: 20px;
-
       padding-bottom: 15px;
     }
   }
@@ -72,51 +69,55 @@
     // grid-area: link;
   }
 
-  &__link {
-  }
+
 
   &__title {
-    font-weight: $font-weight-700;
-    font-size: $font-size-42;
-    line-height: 50px;
-    background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
     margin-bottom: 20px;
 
+    background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+    -webkit-background-clip: text;
+            background-clip: text;
+
+    font-size: $font-size-42;
+    font-weight: $font-weight-700;
+    line-height: 50px;
+
     @include sm {
+      margin-bottom: 5px;
+
       font-size: $font-size-32;
       line-height: 38px;
-      margin-bottom: 5px;
     }
+    -webkit-text-fill-color: transparent;
+            text-fill-color: transparent;
   }
 
   &__author-wrap {
     @include sm {
       position: relative;
-      padding-bottom: 10px;
+
       padding-top: 10px;
+      padding-bottom: 10px;
       padding-left: 70px;
     }
-
     @include sm {
       &::before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+
         content: "";
+
         background-image: url(../img/author-small.png);
         background-repeat: no-repeat;
-
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
 
         @media (min-width: 411.9px) {
           bottom: 0;
         }
         @media (max-width: 411.9px) {
           top: 15px;
+
           padding: 30px 0;
         }
       }
@@ -125,15 +126,19 @@
 
   &__author {
     position: relative;
-    font-size: $font-size-18;
-    line-height: 21px;
-    color: $color-grey-bg-text;
+
     margin-bottom: 5px;
+
+    color: $color-grey-bg-text;
+
+    font-size: $font-size-18;
     font-weight: $font-weight-500;
+    line-height: 21px;
   }
 
   &__job {
-    line-height: 22px;
     color: $color-grey-bg-text;
+
+    line-height: 22px;
   }
 }

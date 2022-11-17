@@ -2,37 +2,40 @@
 @use "../mixins" as *;
 
 .item-benefits {
-  &__item {
-  }
-
   &__picture {
     display: flex;
 
     @include sm-min {
       flex-direction: column;
+
       margin-bottom: 15px;
+
       gap: $gap;
     }
-
     @include sm {
       align-items: center;
+
       margin-bottom: 10px;
+
       gap: $gap-sm;
     }
   }
 
   &__img-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     width: 92px;
     height: 92px;
-    background: #ffffff;
+
     border-radius: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: #ffffff;
 
     @include sm {
       max-width: 64px;
       height: 64px;
+
       border-radius: 18px;
     }
   }
@@ -43,11 +46,13 @@
   }
 
   &__title {
-    font-size: $font-size-24;
-    line-height: 28px;
-    color: $color-active-regular;
     order: 1;
+
+    color: $color-active-regular;
+
+    font-size: $font-size-24;
     font-weight: $font-weight-500;
+    line-height: 28px;
 
     @include sm {
       font-size: $font-size-18;
@@ -56,9 +61,10 @@
   }
 
   &__description {
+    color: $color-white;
+
     font-size: $font-size-18;
     line-height: 26px;
-    color: $color-white;
 
     @include sm {
       font-size: $font-size-16;

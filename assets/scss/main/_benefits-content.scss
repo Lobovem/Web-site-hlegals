@@ -28,37 +28,39 @@
   }
 
   &__title {
-    font-size: $font-size-42;
-    line-height: 50px;
-    background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
     margin-bottom: 68px;
 
+    background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+    -webkit-background-clip: text;
+
+    font-size: $font-size-42;
+    line-height: 50px;
+
     @include sm {
+      margin-bottom: 20px;
+
       font-size: $font-size-32;
       line-height: 38px;
-      margin-bottom: 20px;
     }
+    -webkit-text-fill-color: transparent;
   }
 
   &__wrap {
     display: grid;
-    gap: 58px 54px;
+
     padding-bottom: 76px;
 
+    gap: 58px 54px;
     @include lg-min {
       grid-template-columns: 1fr 1fr 1fr;
     }
-
     @include lg-sm {
       grid-template-columns: 1fr 1fr;
     }
-
     @include sm {
       font-size: $font-size-38;
       line-height: 46px;
+
       gap: 40px $gap-xl;
     }
   }

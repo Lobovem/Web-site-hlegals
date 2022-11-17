@@ -3,51 +3,50 @@
 
 .cases {
   &__container {
-    background: $color-grey-bg;
     // border: 1px solid $color-white;
     // border-radius: 0px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+
+    background: $color-grey-bg;
+
     grid-auto-rows: minmax(198px, auto);
+    grid-template-columns: 1fr 1fr 1fr;
     // grid-template-columns: 1fr 1fr 1fr;
   }
 
   &__item-1 {
-    border: 2px solid black;
     width: 433px;
+
+    border: 2px solid black;
   }
 
   &__item-2 {
-    border: 2px solid black;
     width: 455px;
+
+    border: 2px solid black;
   }
 
   &__item-3 {
-    border: 2px solid black;
     width: 433px;
+
+    border: 2px solid black;
   }
 
   &__item-4 {
-    border: 2px solid black;
     width: 317px;
+
+    border: 2px solid black;
   }
 
   &__item-5 {
-    border: 2px solid black;
     width: 454px;
+
+    border: 2px solid black;
   }
 
   &__item-6 {
-    border: 2px solid black;
     width: 550px;
-  }
 
-  &__title {
-  }
-
-  &__item-title {
-  }
-
-  &__item-description {
+    border: 2px solid black;
   }
 }
