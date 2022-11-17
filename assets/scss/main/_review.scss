@@ -111,12 +111,20 @@
         left: 0;
         right: 0;
         top: 0;
-        bottom: 0;
+
+        @media (min-width: 411.9px) {
+          bottom: 0;
+        }
+        @media (max-width: 411.9px) {
+          top: 15px;
+          padding: 30px 0;
+        }
       }
     }
   }
 
   &__author {
+    position: relative;
     font-size: $font-size-18;
     line-height: 21px;
     color: $color-grey-bg-text;

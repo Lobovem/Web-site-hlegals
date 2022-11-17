@@ -41,15 +41,31 @@
     line-height: 50px;
     color: $color-grey-bg-text;
     font-weight: $font-weight-700;
+    &:hover {
+      background: linear-gradient(90.13deg, #ef8080 0.84%, #f0145a 99.96%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 
     @include lg {
       display: none;
     }
 
     &--accent {
+      position: relative;
       background: linear-gradient(90.13deg, #ef8080 0.84%, #f0145a 99.96%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+
+      &::after {
+        content: "";
+        position: absolute;
+        background-color: $color-accent;
+        width: 4px;
+        right: -44px;
+        top: 0;
+        bottom: 0;
+      }
       // background-clip: text;
       // text-fill-color: transparent;
       // border-right: 4px solid $color-accent;

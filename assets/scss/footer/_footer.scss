@@ -2,13 +2,14 @@
 @use "../mixins" as *;
 
 .footer {
+  background: $color-grey-bg;
   &__container {
     display: flex;
     justify-content: space-between;
     gap: $gap;
-    padding-top: 35px;
-    padding-bottom: 50px;
-    border-top: 4px solid $color-grey-bg-separator;
+    padding-top: 28px;
+    padding-bottom: 40px;
+    // border-top: 4px solid $color-grey-bg-separator;
     flex-wrap: wrap;
 
     @include md {
