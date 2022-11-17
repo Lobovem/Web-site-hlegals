@@ -3,7 +3,6 @@
 
 .header {
   position: relative;
-  // TODO пересмотреть стык блоков, сделал на минусовых margin
 
   min-height: 800px;
 
@@ -58,6 +57,10 @@
       padding-top: 22px;
 
       background: $color-main;
+    }
+
+    @include sm {
+      min-height: 116px;
     }
 
     &::after {
