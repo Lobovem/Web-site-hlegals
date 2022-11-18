@@ -1,0 +1,151 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.slider {
+  display: flex;
+  color: $color-white;
+
+  @include md-min {
+    gap: 80px;
+  }
+
+  @include md {
+    flex-direction: column;
+  }
+
+  &__headers {
+    position: relative;
+    flex-grow: 2;
+    flex-basis: 0;
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+
+    @include md-min {
+      &:after {
+        content: "";
+        position: absolute;
+        right: -42px;
+        width: 4px;
+        height: 100%;
+        top: 0;
+        background-color: $color-grey-bg-separator;
+      }
+    }
+  }
+
+  &__header {
+    position: relative;
+    user-select: none;
+    line-height: 50px;
+    color: $color-grey-bg-text;
+    font-weight: 700;
+
+    @include md-min {
+      font-size: 42px;
+      text-align: right;
+    }
+
+    @include md {
+      font-size: $font-size-14;
+      line-height: 17px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      display: none;
+      margin-bottom: 10px;
+    }
+
+    &.active {
+      @include md-min {
+        &:after {
+          content: "";
+          position: absolute;
+          right: -42px;
+          width: 4px;
+          height: 100%;
+          top: 0;
+          background-color: $color-accent;
+          z-index: 1;
+        }
+      }
+      span {
+        background: linear-gradient(90.13deg, #ef8080 0.84%, #f0145a 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+      }
+
+      @include md {
+        display: block;
+      }
+    }
+  }
+
+  &__notes {
+    flex-grow: 3;
+    flex-basis: 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__note {
+    position: absolute;
+    max-width: 600px;
+    z-index: -9999;
+    opacity: 0;
+    &.active {
+      position: static;
+      z-index: inherit;
+      opacity: 1;
+    }
+  }
+
+  &__note-title {
+    font-size: 32px;
+    line-height: 38px;
+    color: $color-white;
+    font-weight: 400;
+    margin-bottom: 20px;
+
+    @include md {
+      font-size: $font-size-22;
+      line-height: 26px;
+      margin-bottom: 18px;
+    }
+  }
+
+  &__note-description {
+    font-size: 21px;
+    line-height: 30px;
+    color: $color-white;
+
+    @include md {
+      font-size: $font-size-18;
+      line-height: 26px;
+    }
+  }
+
+  &__indicators {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+
+    @include md-min {
+      display: none;
+    }
+  }
+
+  &__indicator {
+    width: 16px;
+    height: 16px;
+    opacity: 0.2;
+    border-radius: 8px;
+    background: $color-active-regular;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+}
