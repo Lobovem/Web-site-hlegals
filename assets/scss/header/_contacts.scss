@@ -16,8 +16,17 @@
     justify-content: space-between;
   }
 
+  &__lang {
+  }
+
   &__lang-link {
-    padding: 2px;
+    padding: 4px;
+    &:hover {
+      border-radius: 8px;
+      background: #ededf7;
+      padding: 4px;
+      color: $color-grey-bg-text;
+    }
 
     letter-spacing: 1px;
 
@@ -83,6 +92,13 @@
 
     @include sm {
       display: none;
+    }
+  }
+
+  &__social-img {
+    transition: 0.2s linear;
+    &:hover {
+      fill: $color-accent;
     }
   }
 }

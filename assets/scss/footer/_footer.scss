@@ -2,6 +2,13 @@
 @use "../mixins" as *;
 
 .footer {
+  &__social-img {
+    transition: 0.2s linear;
+    &:hover {
+      fill: $color-accent;
+    }
+  }
+
   background: $color-grey-bg;
   &__container {
     display: flex;
@@ -20,8 +27,6 @@
       padding-bottom: 120px;
     }
   }
-
-
 
   &__contacts {
     display: flex;
@@ -60,6 +65,11 @@
     font-size: $font-size-12;
     font-weight: 700;
     line-height: 14px;
+    transition: 0.2s linear;
+
+    &:hover {
+      color: $color-accent;
+    }
   }
 
   &__contacts-second {
@@ -75,8 +85,6 @@
     }
   }
 
-
-
   &__phone-link {
     color: $color-main-alt;
 
@@ -84,19 +92,16 @@
     line-height: 19px;
   }
 
-
-
-
-
-
-
-
-
   &__email-link {
     color: $color-active-regular;
 
     font-weight: 700;
     line-height: 14px;
+    transition: 0.2s linear;
+
+    &:hover {
+      color: $color-accent;
+    }
   }
 
   &__copyright {
@@ -105,4 +110,3 @@
     line-height: 19px;
   }
 }
-

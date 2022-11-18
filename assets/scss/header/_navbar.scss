@@ -39,6 +39,11 @@
 
     font-size: $font-size-18;
     line-height: 21px;
+    transition: 0.2s linear;
+
+    &:hover {
+      color: $color-accent;
+    }
 
     &--accent {
       text-decoration: underline;

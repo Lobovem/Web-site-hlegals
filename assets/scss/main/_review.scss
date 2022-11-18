@@ -69,14 +69,12 @@
     // grid-area: link;
   }
 
-
-
   &__title {
     margin-bottom: 20px;
 
     background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
     -webkit-background-clip: text;
-            background-clip: text;
+    background-clip: text;
 
     font-size: $font-size-42;
     font-weight: $font-weight-700;
@@ -89,7 +87,7 @@
       line-height: 38px;
     }
     -webkit-text-fill-color: transparent;
-            text-fill-color: transparent;
+    text-fill-color: transparent;
   }
 
   &__author-wrap {
@@ -103,23 +101,16 @@
     @include sm {
       &::before {
         position: absolute;
-        top: 0;
         right: 0;
         left: 0;
+        top: 4px;
+        bottom: 0;
+        padding: 30px 0;
 
         content: "";
 
         background-image: url(../img/author-small.png);
         background-repeat: no-repeat;
-
-        @media (min-width: 411.9px) {
-          bottom: 0;
-        }
-        @media (max-width: 411.9px) {
-          top: 15px;
-
-          padding: 30px 0;
-        }
       }
     }
   }
