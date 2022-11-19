@@ -1,8 +1,6 @@
 @use "../presets" as *;
 @use "../mixins" as *;
 
-//ПЕРЕСМОТРЕТЬ ВЕСЬ БЛОК
-
 .companies {
   &__wrap {
     display: grid;
@@ -12,7 +10,6 @@
 
     grid-auto-rows: 120px;
     @include lg-min {
-      // grid-template-columns: repeat(4, minmax(230px, 300px));
       grid-template-columns: repeat(4, 1fr);
     }
     @include lg-md {
@@ -21,12 +18,12 @@
     @include md {
       grid-auto-rows: 90px;
       grid-template-areas:
-        "a b"
-        "c d"
-        "h g"
-        "e i"
-        "l k"
-        "j f";
+        "hillel wannabiz"
+        "tapgerine dlook"
+        "ecoleasing clikky"
+        "orengear infatek"
+        "ultimatecard artprint"
+        "citypark addtelligent";
       grid-template-columns: repeat(2, 1fr);
     }
   }
@@ -45,302 +42,121 @@
   }
 
   .companies {
-    &__img-1 {
-      // max-height: 110px;
+    &__img {
       padding: 10px;
 
+      @include sm {
+        width: 60%;
+      }
+
       @include xs {
-        width: 90%;
-        // max-height: 80px;
+        width: 70%;
+      }
+
+      @include xx {
+        width: 80%;
       }
     }
 
-    &__img-2 {
-      // max-height: 110px;
-      padding: 10px;
-
-      @include xs {
-        width: 90%;
-        // max-height: 80px;
-      }
-    }
-
-    &__img-3 {
-      // max-height: 110px;
-      padding: 10px;
-
-      @include xs {
-        width: 90%;
-        // max-height: 80px;
-      }
-    }
-
-    &__img-4 {
-      // max-height: 110px;
-      padding: 10px;
-
-      @include xs {
-        width: 90%;
-        // max-height: 80px;
-      }
-    }
-
-    &__img-5 {
-      // max-height: 110px;
-      padding: 10px;
-
-      @include xs {
-        width: 90%;
-        // max-height: 80px;
-      }
-    }
-
-    &__img-6 {
-      // max-height: 110px;
-      padding: 10px;
-
-      @include xs {
-        width: 90%;
-        // max-height: 80px;
-      }
-    }
-
-    &__img-7 {
-      // max-height: 110px;
-      padding: 10px;
-
-      @include xs {
-        width: 90%;
-      }
-    }
-
-    &__img-8 {
-      // max-height: 110px;
-      padding: 10px;
-
-      @include xs {
-        width: 90%;
-        // max-height: 80px;
-      }
-    }
-
-    &__img-9 {
-      // max-height: 110px;
-      padding: 10px;
-
-      @include xs {
-        width: 90%;
-        // max-height: 80px;
-      }
-    }
-
-    &__img-10 {
-      // max-height: 110px;
-      padding: 10px;
-
-      @include xs {
-        width: 90%;
-        // max-height: 80px;
-      }
-    }
-
-    &__img-11 {
-      // max-height: 110px;
-      padding: 10px;
-
-      @include xs {
-        width: 90%;
-        // max-height: 80px;
-      }
-    }
-
-    &__img-12 {
-      // max-height: 110px;
-      padding: 10px;
-
-      @include xs {
-        width: 90%;
-        // max-height: 80px;
-      }
-    }
-
-    &:nth-child(1) {
-    }
-
-    &:nth-child(2) {
-    }
-
-    &:nth-child(3) {
-    }
-
-    &:nth-child(4) {
-    }
-
-    &:nth-child(5) {
-    }
-
-    &:nth-child(6) {
-    }
-
-    &:nth-child(7) {
-    }
-
-    &:nth-child(8) {
-    }
-
-    &:nth-child(9) {
-    }
-
-    &:nth-child(10) {
-    }
-
-    &:nth-child(11) {
-    }
-
-    &:nth-child(12) {
-    }
-
-    &__logo-1 {
+    &__logo {
       display: flex;
       align-items: center;
       justify-content: center;
 
-      background: #1c4280;
+      &:nth-child(1) {
+        background: #1c4280;
 
-      @include md {
-        grid-area: a;
+        @include md {
+          grid-area: hillel;
+        }
       }
-    }
 
-    &__logo-2 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      &:nth-child(2) {
+        background: #143646;
 
-      background: #143646;
-
-      @include md {
-        grid-area: b;
+        @include md {
+          grid-area: wannabiz;
+        }
       }
-    }
 
-    &__logo-3 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      &:nth-child(3) {
+        background: #f48b30;
 
-      background: #f48b30;
-
-      @include md {
-        grid-area: c;
+        @include md {
+          grid-area: tapgerine;
+        }
       }
-    }
 
-    &__logo-4 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      &:nth-child(4) {
+        background: #9e4dc3;
 
-      background: #9e4dc3;
-
-      @include md {
-        grid-area: d;
+        @include md {
+          grid-area: dlook;
+        }
       }
-    }
 
-    &__logo-5 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      &:nth-child(5) {
+        background: #fd9339;
 
-      background: #fd9339;
-
-      @include md {
-        grid-area: e;
+        @include md {
+          grid-area: orengear;
+        }
       }
-    }
 
-    &__logo-6 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      &:nth-child(6) {
+        background: #e2e2e4;
 
-      background: #e2e2e4;
-
-      @include md {
-        grid-area: f;
+        @include md {
+          grid-area: addtelligent;
+        }
       }
-    }
 
-    &__logo-7 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      &:nth-child(7) {
+        background: #c71c36;
 
-      background: #c71c36;
-
-      @include md {
-        grid-area: g;
+        @include md {
+          grid-area: clikky;
+        }
       }
-    }
 
-    &__logo-8 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      &:nth-child(8) {
+        background: #dcf3f9;
 
-      background: #dcf3f9;
-
-      @include md {
-        grid-area: h;
+        @include md {
+          grid-area: ecoleasing;
+        }
       }
-    }
 
-    &__logo-9 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      &:nth-child(9) {
+        background: #eaeaea;
 
-      background: #eaeaea;
-
-      @include md {
-        grid-area: i;
+        @include md {
+          grid-area: infatek;
+        }
       }
-    }
 
-    &__logo-10 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      &:nth-child(10) {
+        background: #282240;
 
-      background: #282240;
-
-      @include md {
-        grid-area: j;
+        @include md {
+          grid-area: citypark;
+        }
       }
-    }
 
-    &__logo-11 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      &:nth-child(11) {
+        background: #1d4568;
 
-      background: #1d4568;
-
-      @include md {
-        grid-area: k;
+        @include md {
+          grid-area: artprint;
+        }
       }
-    }
 
-    &__logo-12 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      &:nth-child(12) {
+        background: #000000;
 
-      background: #000000;
-
-      @include md {
-        grid-area: l;
+        @include md {
+          grid-area: ultimatecard;
+        }
       }
     }
   }
