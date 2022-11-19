@@ -6,7 +6,7 @@
   align-items: center;
 
   grid-area: cont;
-  @include md-min {
+  @include lg-min {
     justify-content: flex-end;
   }
   @include sm-min {

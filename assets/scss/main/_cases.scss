@@ -3,42 +3,89 @@
 
 .cases {
   &__container {
-    // border: 1px solid $color-white;
-    // border-radius: 0px;
-    display: grid;
+    padding-bottom: 30px;
 
-    background: $color-grey-bg;
-
-    // grid-auto-rows: minmax(198px, auto);
-    grid-template-columns: 1.2fr 1.2fr 1.2fr;
-    border-radius: 12px 12px 0px 0px;
-    &--second {
-      // grid-template-columns: 320px 453px 547px;
-      grid-template-columns: 1.5fr 2fr 2.5fr;
-
-      border-radius: 0 0 12px 12px;
+    @include lg-min {
+      display: grid;
+      grid-auto-rows: auto;
+      grid-template-columns: 1.5fr 0.4fr 1.7fr 0.4fr 2fr;
+      grid-template-areas:
+        "it1 it1 it3 it3 it4"
+        "it2 it2 it3 it3 it4"
+        "it5 it6 it6 it7 it7";
     }
   }
 
   &__title {
     font-size: $font-size-14;
     line-height: 17px;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
     text-transform: uppercase;
     color: $color-accent;
     font-weight: $font-weight-700;
-    // grid-column: 1/4;
   }
 
   &__item {
-    min-width: 198px;
+    min-height: 198px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 0 20px 20px 20px;
-    background: #f5f5fa;
+    padding: 20px 20px 20px 20px;
     border: 1px solid $color-white;
-    &:nth-of-type(1) {
+    background: $color-grey-bg;
+
+    @include lg {
+      justify-content: flex-start;
+      min-height: 140px;
+    }
+
+    &:nth-child(1) {
+      min-height: 57px;
+      grid-area: it1;
+
+      @include lg-min {
+      }
+
+      @include lg {
+        border-radius: 12px 12px 0px 0px;
+      }
+    }
+
+    &:nth-child(2) {
+      grid-area: it2;
+    }
+
+    &:nth-child(3) {
+      grid-area: it3;
+    }
+
+    &:nth-child(4) {
+      grid-area: it4;
+
+      @include lg-min {
+        border-radius: 0px 12px 0px 0px;
+      }
+    }
+
+    &:nth-child(5) {
+      grid-area: it5;
+
+      @include lg-min {
+        border-radius: 0px 0px 0px 12px;
+      }
+    }
+
+    &:nth-child(6) {
+      grid-area: it6;
+    }
+
+    &:nth-child(7) {
+      border-radius: 0px 0px 12px 0px;
+      grid-area: it7;
+
+      @include lg {
+        border-radius: 0px 0px 12px 12px;
+      }
     }
   }
 
@@ -48,6 +95,11 @@
     line-height: 28px;
     color: $color-main-soft;
     margin-bottom: 20px;
+
+    @include lg {
+      font-size: $font-size-18;
+      line-height: 21px;
+    }
   }
 
   &__item-description {

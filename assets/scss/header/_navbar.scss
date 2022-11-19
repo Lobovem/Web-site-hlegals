@@ -21,10 +21,10 @@
     gap: $gap-sm;
     grid-area: menu;
     @include unlist;
-    @include md-min {
+    @include lg-min {
       justify-content: end;
     }
-    @include md {
+    @include lg {
       margin-left: -5px;
     }
     @include sm {

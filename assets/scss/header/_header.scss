@@ -81,13 +81,13 @@
     margin-bottom: 182px;
 
     gap: $gap-sm;
-    @include md-min {
+    @include lg-min {
       justify-content: space-between;
 
       grid-template-areas: "logo cont" "logo burger";
       grid-template-columns: 1fr 3fr;
     }
-    @include md-sm {
+    @include lg-sm {
       margin-bottom: 132px;
 
       gap: $gap-md;
@@ -96,14 +96,9 @@
     @include sm {
       align-items: center;
 
-      margin-bottom: 85px;
-
       grid-template-areas: "cont cont" "logo burger";
       grid-template-columns: 1fr 3fr;
-    }
-    @include sm {
       margin-bottom: 96px;
-
       gap: 25px;
     }
   }
@@ -114,13 +109,13 @@
     margin-bottom: 182px;
 
     gap: $gap-sm;
-    @include md-min {
+    @include lg-min {
       justify-content: space-between;
 
       grid-template-areas: "logo cont" "logo burger";
-      grid-template-columns: 1fr 3fr;
+      grid-template-columns: 1.5fr 3fr;
     }
-    @include md-sm {
+    @include lg-sm {
       margin-bottom: 0;
 
       gap: $gap-md;
@@ -133,43 +128,44 @@
 
       grid-template-areas: "cont cont" "logo burger";
       grid-template-columns: 1fr 3fr;
-    }
-    @include sm {
-      margin-bottom: 0;
-
       gap: 25px;
     }
   }
 
   &__logo {
-    &--primary {
-      position: relative;
-      &::before {
-        content: " послуги";
-        background-image: url(../img/logo-hillel-slash.svg);
-        background-repeat: no-repeat;
-        position: absolute;
-        left: 160px;
-
-        top: 0;
-        bottom: 0;
-        padding-left: 15px;
-        font-size: $font-size-38;
-        line-height: 45px;
-        color: $color-white;
-      }
-
-      &::after {
-        content: "";
-        background-image: url(../img/logo-hillel-mini.svg);
-        background-repeat: no-repeat;
-        position: absolute;
-        left: 315px;
-        top: 0;
-        bottom: 0;
-        padding-left: 50px;
-      }
+    &--secondary {
+      display: flex;
+      gap: 3px;
     }
+
+    // &--secondary {
+    //   position: relative;
+    //   &::before {
+    //     content: " послуги";
+    //     background-image: url(../img/logo-hillel-slash.svg);
+    //     background-repeat: no-repeat;
+    //     position: absolute;
+    //     left: 160px;
+
+    //     top: 0;
+    //     bottom: 0;
+    //     padding-left: 15px;
+    //     font-size: $font-size-38;
+    //     line-height: 45px;
+    //     color: $color-white;
+    //   }
+
+    //   &::after {
+    //     content: "";
+    //     background-image: url(../img/logo-hillel-mini.svg);
+    //     background-repeat: no-repeat;
+    //     position: absolute;
+    //     left: 315px;
+    //     top: 0;
+    //     bottom: 0;
+    //     padding-left: 50px;
+    //   }
+    // }
     grid-area: logo;
     @include md-sm {
       padding-top: 8px;
@@ -180,6 +176,42 @@
     @include sm {
       width: 77px;
       height: 31px;
+    }
+  }
+
+  &__logo-link {
+  }
+
+  &__logo-title {
+    font-weight: 400;
+    font-size: $font-size-38;
+    line-height: 45px;
+    color: $color-white;
+    padding-left: 20px;
+    position: relative;
+
+    &::before {
+      content: "";
+      background-image: url(../img/logo-hillel-slash.svg);
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      padding-left: 20px;
+      font-size: $font-size-38;
+      line-height: 45px;
+      color: $color-white;
+    }
+
+    &::after {
+      content: "";
+      background-image: url(../img/logo-hillel-mini.svg);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      padding-left: 50px;
     }
   }
 
