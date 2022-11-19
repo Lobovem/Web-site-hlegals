@@ -44,6 +44,12 @@
   font-weight: $font-weight-500;
   line-height: 17px;
 
+  transition: 0.2s linear;
+
+  &:hover {
+    color: $color-accent;
+  }
+
   &::after {
     position: absolute;
     top: 5px;
@@ -77,6 +83,7 @@
       content: "";
 
       background-image: url(../img/arrow-right-blue.svg);
+
       background-repeat: no-repeat;
     }
   }

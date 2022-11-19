@@ -20,12 +20,13 @@
     }
     @include md {
       grid-auto-rows: 90px;
-      grid-template-areas: "a b"
-      "c d"
-      "h g"
-      "e i"
-      "l k"
-      "j f";
+      grid-template-areas:
+        "a b"
+        "c d"
+        "h g"
+        "e i"
+        "l k"
+        "j f";
       grid-template-columns: repeat(2, 1fr);
     }
   }
@@ -162,6 +163,43 @@
         // max-height: 80px;
       }
     }
+
+    &:nth-child(1) {
+    }
+
+    &:nth-child(2) {
+    }
+
+    &:nth-child(3) {
+    }
+
+    &:nth-child(4) {
+    }
+
+    &:nth-child(5) {
+    }
+
+    &:nth-child(6) {
+    }
+
+    &:nth-child(7) {
+    }
+
+    &:nth-child(8) {
+    }
+
+    &:nth-child(9) {
+    }
+
+    &:nth-child(10) {
+    }
+
+    &:nth-child(11) {
+    }
+
+    &:nth-child(12) {
+    }
+
     &__logo-1 {
       display: flex;
       align-items: center;

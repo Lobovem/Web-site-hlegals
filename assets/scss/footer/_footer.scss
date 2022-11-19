@@ -92,6 +92,11 @@
 
     font-weight: $font-weight-700;
     line-height: 19px;
+    transition: 0.2s linear;
+
+    &:hover {
+      color: $color-accent;
+    }
   }
 
   &__email-link {

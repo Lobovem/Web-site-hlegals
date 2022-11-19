@@ -61,6 +61,12 @@
     font-style: normal;
     line-height: 19px;
 
+    transition: 0.2s linear;
+
+    &:hover {
+      color: $color-accent;
+    }
+
     @include sm {
       display: none;
     }
@@ -79,10 +85,14 @@
 
     font-weight: $font-weight-700;
     line-height: 19px;
+    transition: 0.2s linear;
+
+    &:hover {
+      color: $color-accent;
+    }
 
     @include sm {
       padding: 5px 0 5px 5px;
-
       color: $color-grey-bg-text;
     }
   }
