@@ -3,6 +3,7 @@
 
 .cases {
   &__container {
+    padding-top: 40px;
     padding-bottom: 30px;
 
     @include lg-min {
@@ -13,6 +14,12 @@
         "it1 it1 it3 it3 it4"
         "it2 it2 it3 it3 it4"
         "it5 it6 it6 it7 it7";
+    }
+
+    &--alt {
+      @include sm {
+        padding-top: 0;
+      }
     }
   }
 

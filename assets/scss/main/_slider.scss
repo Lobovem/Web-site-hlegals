@@ -128,12 +128,16 @@
   }
 
   &__indicators {
-    display: flex;
     justify-content: center;
     gap: 14px;
 
-    @include md-min {
-      display: none;
+    display: none;
+    @include md {
+      display: flex;
+    }
+
+    &--alt {
+      display: flex;
     }
   }
 

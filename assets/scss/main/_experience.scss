@@ -49,6 +49,20 @@
     }
   }
 
+  &--alt {
+    padding-top: 75px;
+    margin-bottom: 20px;
+
+    @include sm {
+      margin-top: 0;
+      padding-top: 10px;
+    }
+
+    @include sm {
+      // margin-bottom: 20px;
+    }
+  }
+
   &::before {
     position: absolute;
     right: 0;

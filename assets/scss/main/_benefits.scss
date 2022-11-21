@@ -3,19 +3,12 @@
 
 .benefits {
   background: $color-main;
+  position: relative;
 
   @include sm {
     padding-top: 22px;
   }
 
-  &--alt {
-    padding-top: 75px;
-
-    @include sm {
-      margin-top: 0;
-      padding-top: 10px;
-    }
-  }
   &__slider {
     padding-top: 90px;
     padding-bottom: 78px;
