@@ -57,7 +57,9 @@
   }
 
   &__adress-title {
-    font-weight: $font-weight-700;
+    @include md {
+      font-weight: $font-weight-700;
+    }
   }
 
   &__adress-link {

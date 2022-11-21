@@ -21,9 +21,9 @@
     content: "";
 
     background: linear-gradient(
-    180deg,
-    rgba(245, 245, 250, 0) 0%,
-    #f5f5fa 86.5%
+      180deg,
+      rgba(245, 245, 250, 0) 0%,
+      #f5f5fa 86.5%
     );
 
     @media (min-width: 906px) {
@@ -39,12 +39,14 @@
     max-width: 412px;
     margin-bottom: 40px;
 
-    background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
-    -webkit-background-clip: text;
-
     font-size: $font-size-42;
     font-weight: $font-weight-700;
     line-height: 50px;
+
+    span {
+      background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+      -webkit-background-clip: text;
+    }
 
     @include sm {
       margin-bottom: 20px;
@@ -56,7 +58,6 @@
   }
 
   &__wrap {
-    
     @include xs-min {
       column-count: auto;
       column-width: 413px;
@@ -66,7 +67,6 @@
       display: flex;
       flex-direction: column;
     }
-
   }
 
   &__button {
