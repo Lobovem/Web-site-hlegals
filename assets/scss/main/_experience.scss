@@ -2,6 +2,76 @@
 @use "../mixins" as *;
 
 .experience {
+  position: relative;
+
+  margin-bottom: 60px;
+
+  border-radius: 0 0 12px 12px;
+  background: linear-gradient(
+    210deg,
+    #323264 11.93%,
+    #323264 60%,
+    #643e72 87.46%
+  );
+
+  @include xx {
+    background: linear-gradient(
+      256.57deg,
+      #323264 11.93%,
+      #323264 61%,
+      #643e72 83.46%
+    );
+  }
+
+  @include sm {
+    margin-bottom: 40px;
+    padding-top: 22px;
+  }
+  &::after {
+    position: absolute;
+    right: 0;
+    left: 0;
+
+    display: block;
+
+    width: 96vw;
+    height: 10px;
+    margin-right: auto;
+    margin-left: auto;
+
+    content: "";
+
+    border-radius: 0 0 12px 12px;
+    background: #cacadb;
+
+    @include sm {
+      width: 90vw;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    left: 0;
+
+    display: block;
+
+    width: 93vw;
+    height: 10px;
+    margin-right: auto;
+    margin-left: auto;
+
+    content: "";
+
+    border-radius: 0 0 12px 12px;
+    background: #e7e7f2;
+
+    @include sm {
+      width: 80vw;
+    }
+  }
+
   &__link {
     // position: relative;
     // font-size: $font-size-14;
