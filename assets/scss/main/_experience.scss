@@ -8,21 +8,20 @@
 
   border-radius: 0 0 12px 12px;
   background: linear-gradient(
-    210deg,
-    #323264 11.93%,
-    #323264 60%,
-    #643e72 87.46%
+  210deg,
+  #323264 11.93%,
+  #323264 60%,
+  #643e72 87.46%
   );
 
   @include xx {
     background: linear-gradient(
-      256.57deg,
-      #323264 11.93%,
-      #323264 61%,
-      #643e72 83.46%
+    256.57deg,
+    #323264 11.93%,
+    #323264 61%,
+    #643e72 83.46%
     );
   }
-
   @include sm {
     margin-bottom: 40px;
     padding-top: 22px;
@@ -50,14 +49,13 @@
   }
 
   &--alt {
-    padding-top: 75px;
     margin-bottom: 20px;
+    padding-top: 75px;
 
     @include sm {
       margin-top: 0;
       padding-top: 10px;
     }
-
     @include sm {
       // margin-bottom: 20px;
     }

@@ -2,8 +2,9 @@
 @use "../mixins" as *;
 
 .benefits {
-  background: $color-main;
   position: relative;
+
+  background: $color-main;
 
   @include sm {
     padding-top: 22px;

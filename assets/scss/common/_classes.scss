@@ -32,9 +32,9 @@
 
   margin-bottom: 2px;
   padding: 2px 40px 2px 0;
-  //пересмотреть, что с spacing, должно быть 2
 
-  letter-spacing: 1px;
+  transition: 0.2s linear;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
 
   opacity: 0.5;
@@ -43,8 +43,6 @@
   font-size: $font-size-14;
   font-weight: $font-weight-500;
   line-height: 17px;
-
-  transition: 0.2s linear;
 
   &:hover {
     color: $color-accent;
@@ -83,7 +81,6 @@
       content: "";
 
       background-image: url(../img/arrow-right-blue.svg);
-
       background-repeat: no-repeat;
     }
   }

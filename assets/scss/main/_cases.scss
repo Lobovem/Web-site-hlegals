@@ -8,12 +8,12 @@
 
     @include lg-min {
       display: grid;
+
       grid-auto-rows: auto;
+      grid-template-areas: "it1 it1 it3 it3 it4"
+      "it2 it2 it3 it3 it4"
+      "it5 it6 it6 it7 it7";
       grid-template-columns: 1.5fr 0.4fr 1.7fr 0.4fr 2fr;
-      grid-template-areas:
-        "it1 it1 it3 it3 it4"
-        "it2 it2 it3 it3 it4"
-        "it5 it6 it6 it7 it7";
     }
 
     &--alt {
@@ -24,37 +24,41 @@
   }
 
   &__title {
-    font-size: $font-size-14;
-    line-height: 17px;
     letter-spacing: 1px;
     text-transform: uppercase;
+
     color: $color-accent;
+
+    font-size: $font-size-14;
     font-weight: $font-weight-700;
+    line-height: 17px;
   }
 
   &__item {
-    min-height: 198px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+
+    min-height: 198px;
     padding: 20px 20px 20px 20px;
+
     border: 1px solid $color-white;
     background: $color-grey-bg;
 
     @include lg {
       justify-content: flex-start;
+
       min-height: 140px;
     }
 
     &:nth-child(1) {
       min-height: 57px;
-      grid-area: it1;
 
+      grid-area: it1;
       @include lg-min {
       }
-
       @include lg {
-        border-radius: 12px 12px 0px 0px;
+        border-radius: 12px 12px 0 0;
       }
     }
 
@@ -68,17 +72,15 @@
 
     &:nth-child(4) {
       grid-area: it4;
-
       @include lg-min {
-        border-radius: 0px 12px 0px 0px;
+        border-radius: 0 12px 0 0;
       }
     }
 
     &:nth-child(5) {
       grid-area: it5;
-
       @include lg-min {
-        border-radius: 0px 0px 0px 12px;
+        border-radius: 0 0 0 12px;
       }
     }
 
@@ -87,21 +89,23 @@
     }
 
     &:nth-child(7) {
-      border-radius: 0px 0px 12px 0px;
-      grid-area: it7;
+      border-radius: 0 0 12px 0;
 
+      grid-area: it7;
       @include lg {
-        border-radius: 0px 0px 12px 12px;
+        border-radius: 0 0 12px 12px;
       }
     }
   }
 
   &__item-title {
+    margin-bottom: 20px;
+
+    color: $color-main-soft;
+
     font-size: $font-size-24;
     font-weight: 500;
     line-height: 28px;
-    color: $color-main-soft;
-    margin-bottom: 20px;
 
     @include lg {
       font-size: $font-size-18;
@@ -110,8 +114,9 @@
   }
 
   &__item-description {
+    color: $color-grey-bg-text;
+
     font-size: $font-size-18;
     line-height: 26px;
-    color: $color-grey-bg-text;
   }
 }

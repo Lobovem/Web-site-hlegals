@@ -7,11 +7,10 @@
 
   margin-bottom: 44px;
 
+  gap: $gap-md;
   @include lg {
     margin-bottom: 30px;
   }
-
-  gap: $gap-md;
   &__link {
     width: 16px;
     height: 16px;

@@ -16,9 +16,11 @@ html {
 }
 
 .body {
-  color: $color-black;
   overflow-x: hidden;
+
   width: 100%;
+
+  color: $color-black;
 }
 
 a {

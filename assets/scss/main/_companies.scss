@@ -17,13 +17,12 @@
     }
     @include md {
       grid-auto-rows: 90px;
-      grid-template-areas:
-        "hillel wannabiz"
-        "tapgerine dlook"
-        "ecoleasing clikky"
-        "orengear infatek"
-        "ultimatecard artprint"
-        "citypark addtelligent";
+      grid-template-areas: "hillel wannabiz"
+      "tapgerine dlook"
+      "ecoleasing clikky"
+      "orengear infatek"
+      "ultimatecard artprint"
+      "citypark addtelligent";
       grid-template-columns: repeat(2, 1fr);
     }
   }
@@ -47,11 +46,9 @@
     @include sm {
       width: 60%;
     }
-
     @include xs {
       width: 70%;
     }
-
     @include xx {
       width: 80%;
     }

@@ -2,14 +2,13 @@
 @use "../mixins" as *;
 
 .footer {
+  background: $color-grey-bg;
   &__social-img {
     transition: 0.2s linear;
     &:hover {
       fill: $color-accent;
     }
   }
-
-  background: $color-grey-bg;
   &__container {
     display: flex;
     // border-top: 4px solid $color-grey-bg-separator;
@@ -19,18 +18,18 @@
     padding-top: 28px;
     padding-bottom: 40px;
 
-    gap: $gap;
     border-top: 4px solid $color-grey-bg-separator;
 
-    &--border {
-      border-top: none;
-    }
-
+    gap: $gap;
     @include md {
       justify-content: center;
 
       padding-top: 20px;
       padding-bottom: 120px;
+    }
+
+    &--border {
+      border-top: none;
     }
   }
 
@@ -63,6 +62,7 @@
   }
 
   &__adress-link {
+    transition: 0.2s linear;
     letter-spacing: 1px;
     text-transform: uppercase;
 
@@ -71,7 +71,6 @@
     font-size: $font-size-12;
     font-weight: 700;
     line-height: 14px;
-    transition: 0.2s linear;
 
     &:hover {
       color: $color-accent;
@@ -92,11 +91,12 @@
   }
 
   &__phone-link {
+    transition: 0.2s linear;
+
     color: $color-main-alt;
 
     font-weight: $font-weight-700;
     line-height: 19px;
-    transition: 0.2s linear;
 
     &:hover {
       color: $color-accent;
@@ -104,11 +104,12 @@
   }
 
   &__email-link {
+    transition: 0.2s linear;
+
     color: $color-active-regular;
 
     font-weight: 700;
     line-height: 14px;
-    transition: 0.2s linear;
 
     &:hover {
       color: $color-accent;
@@ -117,6 +118,7 @@
 
   &__copyright {
     color: $color-grey-bg-text;
+
     font-weight: 500;
     line-height: 19px;
 

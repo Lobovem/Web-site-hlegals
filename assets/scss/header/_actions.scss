@@ -16,17 +16,8 @@
     justify-content: space-between;
   }
 
-  &__lang {
-  }
-
   &__lang-link {
     padding: 4px;
-    &:hover {
-      border-radius: 8px;
-      background: #ededf7;
-      padding: 4px;
-      color: $color-grey-bg-text;
-    }
 
     letter-spacing: 1px;
 
@@ -39,6 +30,13 @@
     grid-area: lang;
     @include sm {
       color: $color-grey-bg-text;
+    }
+    &:hover {
+      padding: 4px;
+
+      color: $color-grey-bg-text;
+      border-radius: 8px;
+      background: $color-grey-bg-alt;
     }
 
     &--active {
@@ -56,19 +54,19 @@
   &__address-link {
     padding: 5px;
 
+    transition: 0.2s linear;
+
     color: $color-white;
 
     font-style: normal;
     line-height: 19px;
 
-    transition: 0.2s linear;
+    @include sm {
+      display: none;
+    }
 
     &:hover {
       color: $color-accent;
-    }
-
-    @include sm {
-      display: none;
     }
   }
 
@@ -81,19 +79,21 @@
   &__phone-link {
     padding: 5px;
 
+    transition: 0.2s linear;
+
     color: $color-white;
 
     font-weight: $font-weight-700;
     line-height: 19px;
-    transition: 0.2s linear;
-
-    &:hover {
-      color: $color-accent;
-    }
 
     @include sm {
       padding: 5px 0 5px 5px;
+
       color: $color-grey-bg-text;
+    }
+
+    &:hover {
+      color: $color-accent;
     }
   }
 

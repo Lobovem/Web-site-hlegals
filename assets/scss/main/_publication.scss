@@ -7,6 +7,11 @@
   padding-top: 40px;
 
   background: $color-grey-bg;
+
+  @include sm {
+    padding-top: 20px;
+    padding-bottom: 105px;
+  }
   &::after {
     position: absolute;
     right: 0;
@@ -16,9 +21,9 @@
     content: "";
 
     background: linear-gradient(
-      180deg,
-      rgba(245, 245, 250, 0) 0%,
-      #f5f5fa 86.5%
+    180deg,
+    rgba(245, 245, 250, 0) 0%,
+    #f5f5fa 86.5%
     );
 
     @media (min-width: 906px) {
@@ -28,10 +33,6 @@
     @media (max-width: 906px) and (min-width: 480px) {
       top: 90%;
     }
-  }
-  @include sm {
-    padding-top: 20px;
-    padding-bottom: 105px;
   }
 
   &__title {
@@ -45,13 +46,13 @@
     font-weight: $font-weight-700;
     line-height: 50px;
 
-    -webkit-text-fill-color: transparent;
-
     @include sm {
+      margin-bottom: 20px;
+
       font-size: $font-size-32;
       line-height: 38px;
-      margin-bottom: 20px;
     }
+    -webkit-text-fill-color: transparent;
   }
 
   &__wrap {
@@ -69,7 +70,6 @@
     // grid-auto-rows: 10px;
     // justify-content: center;
     // рабочий вариант
-
     @include xs-min {
       column-count: auto;
       column-width: 413px;
@@ -94,6 +94,7 @@
     min-height: 50px;
 
     cursor: pointer;
+    transition: 0.3s linear;
     transform: translateX(-50%);
     text-align: center;
 
@@ -106,14 +107,13 @@
     font-size: $font-size-14;
     font-weight: 700;
     line-height: 17px;
-    transition: 0.3s linear;
-
-    &:hover {
-      background: $color-active-hover;
-    }
 
     @include xs {
       bottom: 38px;
+    }
+
+    &:hover {
+      background: $color-active-hover;
     }
   }
 }
@@ -169,8 +169,8 @@
     color: $color-grey-bg-text;
 
     font-size: $font-size-12;
-    line-height: 14px;
     font-weight: $font-weight-700;
+    line-height: 14px;
 
     @include xs-min {
       border-bottom: 4px solid $color-grey-bg-separator;
