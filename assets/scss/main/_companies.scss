@@ -41,123 +41,217 @@
     line-height: 17px;
   }
 
-  .companies {
-    &__img {
-      padding: 10px;
+  &__img {
+    padding: 10px;
 
-      @include sm {
-        width: 60%;
-      }
+    @include sm {
+      width: 60%;
+    }
 
-      @include xs {
-        width: 70%;
-      }
+    @include xs {
+      width: 70%;
+    }
 
-      @include xx {
-        width: 80%;
+    @include xx {
+      width: 80%;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--hillel {
+      background: #1c4280;
+
+      @include md {
+        grid-area: hillel;
       }
     }
 
-    &__logo {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    &--wannabiz {
+      background: #143646;
 
-      &:nth-child(1) {
-        background: #1c4280;
-
-        @include md {
-          grid-area: hillel;
-        }
+      @include md {
+        grid-area: wannabiz;
       }
+    }
 
-      &:nth-child(2) {
-        background: #143646;
+    &--tapgerine {
+      background: #f48b30;
 
-        @include md {
-          grid-area: wannabiz;
-        }
+      @include md {
+        grid-area: tapgerine;
       }
+    }
 
-      &:nth-child(3) {
-        background: #f48b30;
+    &--3d {
+      background: #9e4dc3;
 
-        @include md {
-          grid-area: tapgerine;
-        }
+      @include md {
+        grid-area: dlook;
       }
+    }
 
-      &:nth-child(4) {
-        background: #9e4dc3;
+    &--orangear {
+      background: #fd9339;
 
-        @include md {
-          grid-area: dlook;
-        }
+      @include md {
+        grid-area: orengear;
       }
+    }
 
-      &:nth-child(5) {
-        background: #fd9339;
+    &--adtell {
+      background: #e2e2e4;
 
-        @include md {
-          grid-area: orengear;
-        }
+      @include md {
+        grid-area: addtelligent;
       }
+    }
 
-      &:nth-child(6) {
-        background: #e2e2e4;
+    &--click {
+      background: #c71c36;
 
-        @include md {
-          grid-area: addtelligent;
-        }
+      @include md {
+        grid-area: clikky;
       }
+    }
 
-      &:nth-child(7) {
-        background: #c71c36;
+    &--ecolease {
+      background: #dcf3f9;
 
-        @include md {
-          grid-area: clikky;
-        }
+      @include md {
+        grid-area: ecoleasing;
       }
+    }
 
-      &:nth-child(8) {
-        background: #dcf3f9;
+    &--infratek {
+      background: #eaeaea;
 
-        @include md {
-          grid-area: ecoleasing;
-        }
+      @include md {
+        grid-area: infatek;
       }
+    }
 
-      &:nth-child(9) {
-        background: #eaeaea;
+    &--citypark {
+      background: #282240;
 
-        @include md {
-          grid-area: infatek;
-        }
+      @include md {
+        grid-area: citypark;
       }
+    }
 
-      &:nth-child(10) {
-        background: #282240;
+    &--art {
+      background: #1d4568;
 
-        @include md {
-          grid-area: citypark;
-        }
+      @include md {
+        grid-area: artprint;
       }
+    }
 
-      &:nth-child(11) {
-        background: #1d4568;
+    &--ucard {
+      background: #000000;
 
-        @include md {
-          grid-area: artprint;
-        }
-      }
-
-      &:nth-child(12) {
-        background: #000000;
-
-        @include md {
-          grid-area: ultimatecard;
-        }
+      @include md {
+        grid-area: ultimatecard;
       }
     }
   }
 }
+
+// &:nth-child(1) {
+//   background: #1c4280;
+
+//   @include md {
+//     grid-area: hillel;
+//   }
+// }
+
+// &:nth-child(2) {
+//   background: #143646;
+
+//   @include md {
+//     grid-area: wannabiz;
+//   }
+// }
+
+// &:nth-child(3) {
+//   background: #f48b30;
+
+//   @include md {
+//     grid-area: tapgerine;
+//   }
+// }
+
+// &:nth-child(4) {
+//   background: #9e4dc3;
+
+//   @include md {
+//     grid-area: dlook;
+//   }
+// }
+
+// &:nth-child(5) {
+//   background: #fd9339;
+
+//   @include md {
+//     grid-area: orengear;
+//   }
+// }
+
+// &:nth-child(6) {
+//   background: #e2e2e4;
+
+//   @include md {
+//     grid-area: addtelligent;
+//   }
+// }
+
+// &:nth-child(7) {
+//   background: #c71c36;
+
+//   @include md {
+//     grid-area: clikky;
+//   }
+// }
+
+// &:nth-child(8) {
+//   background: #dcf3f9;
+
+//   @include md {
+//     grid-area: ecoleasing;
+//   }
+// }
+
+// &:nth-child(9) {
+//   background: #eaeaea;
+
+//   @include md {
+//     grid-area: infatek;
+//   }
+// }
+
+// &:nth-child(10) {
+//   background: #282240;
+
+//   @include md {
+//     grid-area: citypark;
+//   }
+// }
+
+// &:nth-child(11) {
+//   background: #1d4568;
+
+//   @include md {
+//     grid-area: artprint;
+//   }
+// }
+
+// &:nth-child(12) {
+//   background: #000000;
+
+//   @include md {
+//     grid-area: ultimatecard;
+//   }
+// }

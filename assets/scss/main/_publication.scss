@@ -69,6 +69,7 @@
     // grid-auto-rows: 10px;
     // justify-content: center;
     // рабочий вариант
+
     @include xs-min {
       column-count: auto;
       column-width: 413px;

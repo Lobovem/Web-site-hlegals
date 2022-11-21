@@ -22,6 +22,10 @@
     gap: $gap;
     border-top: 4px solid $color-grey-bg-separator;
 
+    &--border {
+      border-top: none;
+    }
+
     @include md {
       justify-content: center;
 

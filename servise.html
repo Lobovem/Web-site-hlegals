@@ -12,7 +12,7 @@
 
 <body>
 
-  <header class="header header__servise">
+  <header class="header header--alt">
     <div class="container">
       <div class="header__grid-servise">
         <div class="header__logo header__logo--secondary">
@@ -22,30 +22,39 @@
           <span class="header__logo-title">послуги</span>
         </div>
 
-        <nav class="header-contacts contacts contacts--secondary">
-          <div class="contacts__lang">
-            <a class="contacts__lang-link contacts__lang-link--active" href="">УК</a>
-            <a class="contacts__lang-link" href="">РУ</a>
-            <a class="contacts__lang-link" href="">EN</a>
+        <nav class="header__actions actions actions--secondary">
+          <div class="actions__lang">
+            <a class="actions__lang-link actions__lang-link--active" href="">УК</a>
+            <a class="actions__lang-link" href="">РУ</a>
+            <a class="actions__lang-link" href="">EN</a>
           </div>
 
-          <address class="contacts__address">
-            <a class="contacts__address-link" href="">Одеса, Адміральський пр., 3</a>
+          <address class="actions__address">
+            <a class="actions__address-link" href="">Одеса, Адміральський пр., 3</a>
           </address>
-          <div class="contacts__phone">
-            <a class="contacts__phone-link" href="tel:+380503901591">+38 (050) 390 15 91</a>
+
+          <div class="actions__phone">
+            <a class="actions__phone-link" href="tel:+380503901591">+38 (050) 390 15 91</a>
           </div>
-          <div class="contacts__social">
-            <a class="contacts__social-link" href=""><img class="contacts__social-img" src="assets/img/facebook.svg"
-                alt="facebook"></a>
+
+          <div class="actions__social">
+            <a class="actions__social-link" href="">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="actions__social-img"
+                  d="M24 12.0733C24 5.40541 18.6274 0 12 0C5.37258 0 0 5.40541 0 12.0733C0 18.0995 4.38823 23.0943 10.125 24V15.5633H7.07813V12.0733H10.125V9.41343C10.125 6.38755 11.9165 4.71615 14.6576 4.71615C15.9705 4.71615 17.3438 4.95195 17.3438 4.95195V7.92313H15.8306C14.3399 7.92313 13.875 8.85379 13.875 9.80857V12.0733H17.2031L16.6711 15.5633H13.875V24C19.6118 23.0943 24 18.0995 24 12.0733Z"
+                  fill="white" />
+              </svg>
+            </a>
           </div>
         </nav>
-        <nav class="header-navbar-menu navbar">
+
+        <nav class="header__navbar-menu navbar">
           <div class="navbar__burger">
             <span class="navbar__burger-row"></span>
             <span class="navbar__burger-row"></span>
             <span class="navbar__burger-row"></span>
           </div>
+
           <ul class="navbar__list navbar__list--secondary">
             <li class="navbar__item"><a class="navbar__link" href="index.html">про нас</a></li>
             <li class="navbar__item"><a class="navbar__link navbar__link--accent" href="">послуги</a></li>
@@ -63,8 +72,6 @@
 
     <section class="benefits benefits__servise">
       <div class="container">
-
-
 
         <div class="benefits-content">
           <h2 class="benefits-content__title">Що ми вміємо робити краще за інших?</h2>
@@ -200,30 +207,30 @@
       <div class="container companies__container">
         <h2 class="companies__title">Вже довіряють нам</h2>
         <div class="companies__wrap">
-          <a class="companies__logo" href=""><img class="companies__img" src="assets/img/logo-hillel.svg"
-              alt="companies__img"></a>
-          <a class="companies__logo" href=""><img class="companies__img" src="assets/img/logo-wannabiz.png"
-              alt="companies__img"></a>
-          <a class="companies__logo" href=""><img class="companies__img" src="assets/img/logo-tapgerine.svg"
-              alt="companies__img"></a>
-          <a class="companies__logo" href=""><img class="companies__img" src="assets/img/logo-3d.png"
-              alt="companies__img"></a>
-          <a class="companies__logo" href=""><img class="companies__img" src="assets/img/logo-orangear.svg"
-              alt="companies__img"></a>
-          <a class="companies__logo" href=""><img class="companies__img" src="assets/img/logo-adtell.svg"
-              alt="companies__img"></a>
-          <a class="companies__logo" href=""><img class="companies__img" src="assets/img/logo-click.svg"
-              alt="companies__img"></a>
-          <a class="companies__logo" href=""><img class="companies__img" src="assets/img/logo-ecolease.png"
-              alt="companies__img"></a>
-          <a class="companies__logo" href=""><img class="companies__img" src="assets/img/logo-infratek.png"
-              alt="companies__img"></a>
-          <a class="companies__logo" href=""><img class="companies__img" src="assets/img/logo-citypark.svg"
-              alt="companies__img"></a>
-          <a class="companies__logo" href=""><img class="companies__img" src="assets/img/logo-art.png"
-              alt="companies__img"></a>
-          <a class="companies__logo" href=""><img class="companies__img" src="assets/img/logo-ucard.png"
-              alt="companies__img"></a>
+          <a class="companies__logo companies__logo--hillel" href=""><img class="companies__img"
+              src="assets/img/logo-hillel.svg" alt="companies__img"></a>
+          <a class="companies__logo companies__logo--wannabiz" href=""><img class="companies__img"
+              src="assets/img/logo-wannabiz.png" alt="companies__img"></a>
+          <a class="companies__logo companies__logo--tapgerine" href=""><img class="companies__img"
+              src="assets/img/logo-tapgerine.svg" alt="companies__img"></a>
+          <a class="companies__logo companies__logo--3d" href=""><img class="companies__img"
+              src="assets/img/logo-3d.png" alt="companies__img"></a>
+          <a class="companies__logo companies__logo--orangear" href=""><img class="companies__img"
+              src="assets/img/logo-orangear.svg" alt="companies__img"></a>
+          <a class="companies__logo companies__logo--adtell" href=""><img class="companies__img"
+              src="assets/img/logo-adtell.svg" alt="companies__img"></a>
+          <a class="companies__logo companies__logo--click" href=""><img class="companies__img"
+              src="assets/img/logo-click.svg" alt="companies__img"></a>
+          <a class="companies__logo companies__logo--ecolease" href=""><img class="companies__img"
+              src="assets/img/logo-ecolease.png" alt="companies__img"></a>
+          <a class="companies__logo companies__logo--infratek" href=""><img class="companies__img"
+              src="assets/img/logo-infratek.png" alt="companies__img"></a>
+          <a class="companies__logo companies__logo--citypark" href=""><img class="companies__img"
+              src="assets/img/logo-citypark.svg" alt="companies__img"></a>
+          <a class="companies__logo companies__logo--art" href=""><img class="companies__img"
+              src="assets/img/logo-art.png" alt="companies__img"></a>
+          <a class="companies__logo companies__logo--ucard" href=""><img class="companies__img"
+              src="assets/img/logo-ucard.png" alt="companies__img"></a>
         </div>
       </div>
     </section>
@@ -231,7 +238,7 @@
   </main>
 
   <footer class="footer">
-    <div class="container footer__container">
+    <div class="container footer__container footer__container--border">
       <div class="footer__contacts-wrap">
         <address class="footer__contacts">
           <p class="footer__adress"><span class="footer__adress-title">Одеса</span>, Адміральський пр., 3</p>
