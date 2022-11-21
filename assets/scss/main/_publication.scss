@@ -56,20 +56,7 @@
   }
 
   &__wrap {
-    // display: flex;
-    // flex-wrap: wrap;
-    // flex-direction: column;
-    // max-height: 810px;
-    // justify-content: space-between;
-    // display: grid;
-    // grid-template-columns: repeat(3, 1fr);
-    // grid-auto-rows: 100px;
-    // grid-auto-rows: min-content;
-    // display: grid;
-    // grid-template-columns: repeat(auto-fill, var(250px));
-    // grid-auto-rows: 10px;
-    // justify-content: center;
-    // рабочий вариант
+    
     @include xs-min {
       column-count: auto;
       column-width: 413px;
@@ -80,7 +67,6 @@
       flex-direction: column;
     }
 
-    // column-gap: 1em;
   }
 
   &__button {
