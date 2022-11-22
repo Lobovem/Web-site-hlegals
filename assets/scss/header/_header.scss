@@ -5,6 +5,11 @@
   position: relative;
 
   min-height: 800px;
+  @include lg {
+    background: url(../img/bg-logo.svg) center 119% no-repeat,
+      linear-gradient(42.01deg, #323264 14.33%, #323264 60.39%, #7a425e 87.53%)
+        center no-repeat;
+  }
 
   @include md-min {
     padding-top: 48px;
@@ -31,6 +36,9 @@
   &--alt {
     min-height: 115px;
 
+    @include lg {
+      background: $color-main;
+    }
     @include md-min {
       background: $color-main;
     }
