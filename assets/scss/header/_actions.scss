@@ -34,13 +34,12 @@
     &:hover {
       padding: 4px;
 
-      color: $color-grey-bg-text;
       border-radius: 8px;
-      background: $color-grey-bg-alt;
+      background: $color-accent;
     }
 
     &--active {
-      padding: 5px;
+      padding: 4px;
 
       border-radius: 8px;
       background: $color-accent;
