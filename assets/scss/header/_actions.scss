@@ -4,6 +4,7 @@
 .actions {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 
   grid-area: cont;
   @include lg-min {

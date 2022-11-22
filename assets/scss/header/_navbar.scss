@@ -15,11 +15,12 @@
   &__list {
     display: flex;
 
-    gap: $gap-sm;
+    gap: 5px;
     grid-area: menu;
     @include unlist;
     @include lg-min {
       justify-content: end;
+      margin-right: -5px;
     }
     @include lg {
       margin-left: -5px;
@@ -43,7 +44,7 @@
   }
 
   &__link {
-    padding: 5px 0 5px 5px;
+    padding: 5px 5px 5px 5px;
 
     transition: 0.2s linear;
 
@@ -51,6 +52,7 @@
 
     font-size: $font-size-18;
     line-height: 21px;
+    display: block;
 
     &:hover {
       color: $color-accent;
