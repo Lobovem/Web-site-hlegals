@@ -15,13 +15,34 @@ html {
   font-style: normal;
 }
 
-.body {
-  overflow-x: hidden;
+body {
+  &.active {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(-170px);
 
-  width: 100%;
-
-  color: $color-black;
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: $color-black;
+      opacity: 0.6;
+    }
+  }
 }
+
+// .body {
+//   // overflow-x: hidden;
+
+//   // width: 100%;
+
+//   // color: $color-black;
+// }
 
 a {
   text-decoration: none;

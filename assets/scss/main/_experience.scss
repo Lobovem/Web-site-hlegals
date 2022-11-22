@@ -89,6 +89,11 @@
     font-size: $font-size-42;
     line-height: 50px;
 
+    @include lg {
+      background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+      -webkit-background-clip: text;
+    }
+
     @include sm {
       margin-bottom: 20px;
 
@@ -98,8 +103,10 @@
     -webkit-text-fill-color: transparent;
 
     span {
-      background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
-      -webkit-background-clip: text;
+      @include lg-min {
+        background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+        -webkit-background-clip: text;
+      }
     }
   }
 

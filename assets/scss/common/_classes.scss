@@ -63,25 +63,13 @@
   }
 
   &--alt {
-    position: relative;
-
     opacity: 1;
     color: $color-active-regular;
 
     font-weight: $font-weight-700;
 
     &::after {
-      position: absolute;
-      top: 5px;
-      right: 15px;
-      bottom: 0;
-
-      padding-right: 20px;
-
-      content: "";
-
       background-image: url(../img/arrow-right-blue.svg);
-      background-repeat: no-repeat;
     }
   }
 }

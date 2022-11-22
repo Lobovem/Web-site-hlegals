@@ -41,7 +41,7 @@
 
     @include sm {
       top: 60%;
-      bottom: 0;
+      bottom: -1px;
     }
   }
 
@@ -49,28 +49,17 @@
     min-height: 115px;
 
     @include md-min {
-      padding-top: 48px;
-
       background: $color-main;
     }
     @include md {
-      padding-top: 22px;
-
       background: $color-main;
     }
     @include sm {
-      min-height: 116px;
+      min-height: 115px;
     }
 
     &::after {
-      content: "";
-
-      background: none;
-
-      @include sm {
-        top: 0;
-        bottom: 0;
-      }
+      position: static;
     }
   }
 
@@ -84,7 +73,7 @@
       justify-content: space-between;
 
       grid-template-areas: "logo cont" "logo burger";
-      grid-template-columns: 1fr 3fr;
+      grid-template-columns: 1.5fr 3fr;
     }
     @include lg-sm {
       margin-bottom: 132px;
@@ -104,7 +93,7 @@
 
     &--alt {
       @include lg-min {
-        grid-template-columns: 1.5fr 3fr;
+        margin-bottom: 0;
       }
       @include lg-sm {
         margin-bottom: 0;

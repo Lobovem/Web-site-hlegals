@@ -1,8 +1,16 @@
-$(document).ready(() => {
-  $('.navbar__burger').on('click', function () {
-    $(this).toggleClass('active');
-    $('.navbar__list').toggleClass('active');
-  });
+// управление меню
+const menuBtn = document.querySelector('.navbar__burger');
+const menuList = document.querySelector('.navbar__list');
+const body = document.querySelector('body');
+
+menuBtn.addEventListener('click', (e) => {
+  menuBtn.classList.toggle('active');
+  body.classList.toggle('active');
+  if (menuList.classList.contains('active')) {
+    setTimeout(() => menuList.classList.toggle('active'), 500);
+  } else {
+    menuList.classList.toggle('active');
+  }
 });
 
 
