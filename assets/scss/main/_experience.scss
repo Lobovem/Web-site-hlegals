@@ -8,18 +8,18 @@
 
   border-radius: 0 0 12px 12px;
   background: linear-gradient(
-    210deg,
-    #323264 11.93%,
-    #323264 60%,
-    #643e72 87.46%
+  210deg,
+  #323264 11.93%,
+  #323264 60%,
+  #643e72 87.46%
   );
 
   @include xx {
     background: linear-gradient(
-      256.57deg,
-      #323264 11.93%,
-      #323264 61%,
-      #643e72 83.46%
+    256.57deg,
+    #323264 11.93%,
+    #323264 61%,
+    #643e72 83.46%
     );
   }
   @include sm {
@@ -93,7 +93,6 @@
       background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
       -webkit-background-clip: text;
     }
-
     @include sm {
       margin-bottom: 20px;
 
@@ -123,9 +122,10 @@
       grid-template-columns: 1fr 1fr;
     }
     @include sm {
+      padding-bottom: 20px;
+
       font-size: $font-size-38;
       line-height: 46px;
-      padding-bottom: 20px;
 
       gap: 40px $gap-xl;
     }

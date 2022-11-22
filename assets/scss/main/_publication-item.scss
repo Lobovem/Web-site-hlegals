@@ -29,20 +29,21 @@
     width: 100%;
   }
 
-  &__title {
-  }
+
 
   &__title-link {
+    display: block;
+
     margin-bottom: 10px;
     padding: 20px 20px 0 20px;
+
+    transition: 0.2s linear;
 
     color: $color-active-regular;
 
     font-size: $font-size-18;
     font-weight: 500;
     line-height: 21px;
-    display: block;
-    transition: 0.2s linear;
 
     &:hover {
       color: $color-accent;

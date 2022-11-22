@@ -5,12 +5,12 @@
   position: relative;
 
   min-height: 800px;
+
   @include lg {
     background: url(../img/bg-logo.svg) center 119% no-repeat,
       linear-gradient(42.01deg, #323264 14.33%, #323264 60.39%, #7a425e 87.53%)
         center no-repeat;
   }
-
   @include md-min {
     padding-top: 48px;
 
@@ -122,7 +122,6 @@
     @include sm {
       padding-left: 12px;
     }
-
     @include sm {
       font-size: $font-size-19;
       line-height: 22px;
@@ -220,11 +219,11 @@
   &__img {
     position: absolute;
 
-    width: 100vw;
     height: 500px;
 
     @include sm {
       object-fit: cover;
+      width: 100vw;
     }
     @include sm {
       top: 32%;

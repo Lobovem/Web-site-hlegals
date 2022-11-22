@@ -3,6 +3,7 @@
 
 .navbar {
   z-index: 10;
+
   grid-area: burger;
   @include sm {
     margin-left: auto;
@@ -20,20 +21,24 @@
     @include unlist;
     @include lg-min {
       justify-content: end;
+
       margin-right: -5px;
     }
     @include lg {
       margin-left: -5px;
     }
     @include sm {
-      display: none;
       position: absolute;
       top: 0;
       right: -170px;
-      background-color: $color-main;
-      height: 100vh;
+
+      display: none;
+
       width: 170px;
+      height: 100vh;
       padding: $gap;
+
+      background-color: $color-main;
     }
     &.active {
       @include sm {
@@ -44,6 +49,8 @@
   }
 
   &__link {
+    display: block;
+
     padding: 5px 5px 5px 5px;
 
     transition: 0.2s linear;
@@ -52,7 +59,6 @@
 
     font-size: $font-size-18;
     line-height: 21px;
-    display: block;
 
     &:hover {
       color: $color-accent;
