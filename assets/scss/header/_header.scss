@@ -28,23 +28,6 @@
     min-height: 650px;
   }
 
-  &::after {
-    position: absolute;
-    top: 70%;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    content: "";
-
-    background: linear-gradient(to top, #323264 0, transparent 100%);
-
-    @include sm {
-      top: 60%;
-      bottom: -1px;
-    }
-  }
-
   &--alt {
     min-height: 115px;
 
@@ -56,10 +39,6 @@
     }
     @include sm {
       min-height: 115px;
-    }
-
-    &::after {
-      position: static;
     }
   }
 
@@ -211,6 +190,23 @@
     display: flex;
     align-items: flex-start;
     justify-content: center;
+
+    &::after {
+      position: absolute;
+      top: 70%;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      content: "";
+
+      background: linear-gradient(to top, #323264 0, transparent 100%);
+
+      @include sm {
+        top: 60%;
+        bottom: -1px;
+      }
+    }
   }
 
   &__img {
