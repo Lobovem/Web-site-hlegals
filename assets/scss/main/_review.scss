@@ -11,14 +11,14 @@
     border-radius: 12px;
     background: $color-grey-bg;
 
-    @include md-min {
+    @include lg-min {
       gap: 0 $gap-xl;
       grid-template-columns: 1fr 2fr;
     }
-    @include md {
+    @include lg {
       padding-left: 20px;
     }
-    @include md-sm {
+    @include lg-sm {
       grid-template-areas: "foto" "content";
     }
     @include sm {
@@ -29,7 +29,7 @@
   }
 
   &__foto {
-    @include md {
+    @include lg {
       display: flex;
       justify-content: center;
 
@@ -38,14 +38,14 @@
   }
 
   &__img {
-    @include md-min {
-      width: 100%;
+    @include lg-min {
+      max-width: 420px;
+      max-height: 511px;
     }
-    @include md {
-      width: 50%;
+    @include lg {
+      display: none;
     }
     @include sm {
-      display: none;
     }
   }
 
@@ -65,14 +65,12 @@
     }
   }
 
-
-
   &__title {
     margin-bottom: 20px;
 
     background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
     -webkit-background-clip: text;
-            background-clip: text;
+    background-clip: text;
 
     font-size: $font-size-42;
     font-weight: $font-weight-700;
@@ -88,14 +86,14 @@
   }
 
   &__author-wrap {
-    @include sm {
+    @include lg {
       position: relative;
 
       padding-top: 10px;
       padding-bottom: 10px;
       padding-left: 70px;
     }
-    @include sm {
+    @include lg {
       &::before {
         position: absolute;
         top: 4px;
