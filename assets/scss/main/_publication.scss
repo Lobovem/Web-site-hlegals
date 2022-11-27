@@ -21,9 +21,9 @@
     content: "";
 
     background: linear-gradient(
-    180deg,
-    rgba(245, 245, 250, 0) 0%,
-    #f5f5fa 86.5%
+      180deg,
+      rgba(245, 245, 250, 0) 0%,
+      #f5f5fa 86.5%
     );
 
     @media (min-width: 906px) {
@@ -32,6 +32,14 @@
 
     @media (max-width: 906px) and (min-width: 480px) {
       top: 90%;
+    }
+  }
+
+  &--alt {
+    padding-top: 120px;
+    padding-bottom: 150px;
+    &::after {
+      display: none;
     }
   }
 
