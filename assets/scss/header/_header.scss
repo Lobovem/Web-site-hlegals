@@ -58,16 +58,19 @@
     }
     @include md-min {
       padding-top: 48px;
+      padding-bottom: 40px;
 
       background: none;
     }
     @include md {
       padding-top: 22px;
+      padding-bottom: 40px;
 
       background: none;
     }
     @include sm {
-      min-height: 170px;
+      min-height: 100px;
+      padding-bottom: 20px;
     }
   }
 
