@@ -1,0 +1,46 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.archievments {
+  background: $color-grey-bg;
+  border-radius: 12px 12px 0px 0px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  &__title {
+    font-size: $font-size-14;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: $color-main;
+    margin-bottom: 30px;
+  }
+
+  &__item-box {
+    display: flex;
+    justify-content: space-between;
+    gap: $gap-xl;
+    margin-bottom: 30px;
+
+    @include lg {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+  }
+
+  &__item {
+    height: 109px;
+    width: 300px;
+    background: #ffffff;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__logo {
+    max-height: 100%;
+    padding: 10px;
+  }
+}

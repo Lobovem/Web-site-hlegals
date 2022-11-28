@@ -1,0 +1,107 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.experiense-team {
+  width: min(100% - 40px, 1320px);
+
+  margin-inline: auto;
+  &__wrap-text {
+    @include lg-min {
+      max-width: 641px;
+    }
+  }
+
+  &__title {
+    font-size: $font-size-42;
+    line-height: 50px;
+    background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 20px;
+
+    @include sm {
+      font-size: $font-size-32;
+      line-height: 38px;
+    }
+  }
+
+  &__description {
+    font-size: $font-size-21;
+    line-height: 30px;
+    color: $color-black;
+
+    @include sm {
+      font-size: $font-size-18;
+      line-height: 26px;
+    }
+  }
+
+  &__wrap-item {
+    position: relative;
+
+    @include lg-min {
+      max-width: 375px;
+    }
+
+    @include lg-sm {
+      display: flex;
+      gap: $gap;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+
+      @include lg-min {
+        border-left: 4px solid $color-grey-bg-separator;
+        height: 300px;
+        top: 0;
+        left: -22px;
+      }
+
+      @include lg {
+        border-top: 4px solid $color-grey-bg-separator;
+        left: 0;
+        right: 0;
+        top: 0;
+      }
+    }
+  }
+  &__item {
+    @include lg {
+      padding-top: 20px;
+      flex: 1;
+    }
+  }
+
+  &__item-img {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  &__item-text {
+    font-size: $font-size-36;
+    font-weight: $font-weight-700;
+    line-height: 42px;
+    text-align: center;
+    background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    display: inline-block;
+  }
+
+  &__item-description {
+    font-size: $font-size-18;
+    line-height: 21px;
+    color: $color-main;
+
+    @include sm-min {
+      margin-bottom: 30px;
+    }
+  }
+}

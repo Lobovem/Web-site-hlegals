@@ -1,0 +1,113 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.team {
+  &__experiense {
+    display: flex;
+    justify-content: center;
+
+    @include lg-min {
+      margin-bottom: 80px;
+      gap: 60px;
+    }
+
+    @include lg {
+      flex-wrap: wrap;
+      gap: $gap-lg;
+    }
+
+    @include sm {
+      gap: $gap;
+    }
+  }
+
+  &__foto-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    @include sm {
+      padding-top: 34px;
+    }
+  }
+  &__foto {
+    margin-bottom: 60px;
+    max-width: 1440px;
+    width: 100%;
+
+    @include lg {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__title {
+    display: none;
+    position: absolute;
+    top: 32%;
+    right: -50px;
+    left: 0;
+    font-size: 96px;
+    line-height: 113px;
+    text-align: center;
+    letter-spacing: 63px;
+    text-transform: uppercase;
+    color: $color-white;
+    opacity: 0.8;
+    text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+  }
+
+  &__text-box {
+    display: flex;
+    justify-content: center;
+    gap: $gap-xl;
+    margin-bottom: 80px;
+    width: min(100% - 40px, 1320px);
+
+    margin-inline: auto;
+
+    @include lg {
+      flex-wrap: wrap;
+      margin-bottom: 60px;
+    }
+
+    @include sm {
+      margin-bottom: 40px;
+      gap: $gap;
+    }
+  }
+
+  &__description {
+    font-size: $font-size-21;
+    line-height: 30px;
+    color: $color-black;
+
+    @include lg-min {
+      width: 641px;
+    }
+
+    @include sm {
+      font-size: $font-size-18;
+      line-height: 26px;
+    }
+  }
+
+  &__text {
+    font-size: $font-size-42;
+    line-height: 50px;
+
+    background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+    @include lg-min {
+      width: 414px;
+    }
+
+    @include sm {
+      font-size: $font-size-32;
+      line-height: 38px;
+    }
+  }
+}

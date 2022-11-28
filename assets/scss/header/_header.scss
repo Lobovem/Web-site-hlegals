@@ -111,6 +111,7 @@
       }
       @include sm {
         margin-bottom: 0;
+        grid-template-columns: 4fr 3fr;
       }
     }
   }
