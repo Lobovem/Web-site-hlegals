@@ -3,6 +3,10 @@
 
 .team {
   padding-bottom: 60px;
+
+  @include md {
+    padding-bottom: 40px;
+  }
   &__title {
     max-width: 864px;
     font-size: $font-size-42;
@@ -17,12 +21,24 @@
     margin-right: auto;
     margin-bottom: 80px;
     margin-top: 20px;
+
+    @include md {
+      font-size: $font-size-32;
+      line-height: 38px;
+      margin-bottom: 20px;
+    }
   }
 
   &__grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    // grid-template-columns: repeat(3, 1fr);
     gap: $gap-xl;
+    justify-content: center;
+
+    @include md {
+      gap: $gap;
+    }
   }
 
   &__item {
@@ -30,6 +46,8 @@
 
   &__foto {
     margin-bottom: 20px;
+    max-width: 413px;
+    width: 100%;
   }
 
   &__name {
