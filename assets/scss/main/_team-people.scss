@@ -7,10 +7,23 @@
     gap: $gap-xl;
     justify-content: center;
     margin-bottom: 80px;
+
+    @include lg {
+      flex-wrap: wrap;
+    }
+
+    @include sm {
+      gap: $gap;
+      margin-bottom: 40px;
+    }
   }
 
   &__foto {
     max-height: 500px;
+
+    @include sm {
+      max-height: 410px;
+    }
   }
 
   &__info {
@@ -27,6 +40,11 @@
     background-clip: text;
     text-fill-color: transparent;
     margin-bottom: 10px;
+
+    @include sm {
+      font-size: $font-size-32;
+      line-height: 38px;
+    }
   }
 
   &__actions {
@@ -35,6 +53,12 @@
     margin-bottom: 20px;
     position: relative;
     align-items: center;
+
+    @include sm {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: $gap-sm;
+    }
   }
 
   &__work {
@@ -58,6 +82,10 @@
       background: #e6e6f0;
       left: -18px;
       top: 8px;
+
+      @include sm {
+        display: none;
+      }
     }
   }
 
@@ -75,12 +103,19 @@
       background: #e6e6f0;
       left: -18px;
       top: 8px;
+      @include sm {
+        display: none;
+      }
     }
   }
 
   &__text-box {
     padding-top: 40px;
     border-top: 4px solid #e6e6f0;
+
+    @include sm {
+      padding-top: 20px;
+    }
   }
 
   &__text {
@@ -97,5 +132,9 @@
     color: $color-main;
     margin-top: 40px;
     margin-bottom: 10px;
+
+    @include sm {
+      margin-top: 20px;
+    }
   }
 }
