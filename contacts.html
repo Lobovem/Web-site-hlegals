@@ -19,7 +19,7 @@
           <a class="header__logo-link" href="index.html">
             <img class="header__logo-img" src="assets/img/Logo-header-second.svg" alt="header__logo-img">
           </a>
-          <span class="header__logo-title header__logo-title--alt">команда</span>
+          <span class="header__logo-title header__logo-title--alt">контакти</span>
         </div>
 
         <nav class="header__actions actions">
@@ -72,11 +72,11 @@
             <li class="navbar__item"><a class="navbar__link navbar__link--alt" href="about.html">про
                 нас</a></li>
             <li class="navbar__item"><a class="navbar__link navbar__link--alt" href="servise.html">послуги</a></li>
-            <li class="navbar__item"><a class="navbar__link navbar__link--alt  navbar__link--accent-alt"
-                href="team.html">команда</a></li>
+            <li class="navbar__item"><a class="navbar__link navbar__link--alt" href="team.html">команда</a></li>
             <li class="navbar__item"><a class="navbar__link navbar__link--alt" href="publication.html">публікації</a>
             </li>
-            <li class="navbar__item"><a class="navbar__link navbar__link--alt" href="contacts.html">контакти</a></li>
+            <li class="navbar__item"><a class="navbar__link navbar__link--alt navbar__link--accent-alt"
+                href="#">контакти</a></li>
           </ul>
         </nav>
       </div>
@@ -86,49 +86,61 @@
 
   <main class="main">
 
-    <section class="team-people">
+    <section class="contacts">
       <div class="container">
-
-        <div class="team-people__flex">
-          <img class="team-people__foto" src="assets/img/team-1.png" alt="team-1">
-
-          <div class="team-people__info">
-            <h2 class="team-people__title">Олександр Кац</h2>
-            <div class="team-people__actions">
-              <span class="team-people__work">Керуючий партнер</span>
-              <a class="team-people__email" href="mailto:kac@hlegals.net">kac@hlegals.net</a>
-              <a class="team-people__social" href="">Профіль в LinkedIn</a>
+        <div class="contacts__flex">
+          <div class="contacts__info">
+            <p class="contacts__adress">Одеса, Адміральський пр., 3</p>
+            <div class="contacts__phone">
+              <a class="contacts__phone-link" href="tel:+380503901591">+38 (050) 390 15 91</a>
+              <a class="contacts__phone-link" href="tel:+380503901591">+38 (050) 390 15 91</a>
             </div>
-            <div class="team-people__text-box">
-              <p class="team-people__text">Олександр очолює практику міжнародної торгівлі та шиппінгу. Він
-                спеціалізується
-                на вирішенні спорів,
-                пов'язаних з купівлею-продажем сировинних товарів і перевезенням товарів морем. <br><br>
-                Десис представляє інтереси судновласників, експедиторів, вантажовласників, морських агентів,
-                контейнерних
-                ліній, а також міжнародних банків і клубів P & I.
-              </p>
+            <div class="contacts__email">
+              <a class="contacts__email-link" href="mailto:contact@hlegals.net">contact@hlegals.net</a>
+            </div>
 
-              <h3 class="team-people__title-text">Освіта</h3>
-              <p class="team-people__text"> Національний університет «Одеська юридична академія», магістр права.
-              </p>
-              <h3 class="team-people__title-text">Досвід роботи</h3>
-              <p class="team-people__text">До його професійного досвіду відноситься врегулювання суперечок за
-                англійським
-                правом і представництво
-                інтересів в іноземних комерційних арбітражах, таких як GAFTA, FOSFA та LMAA. Данило також представляє
-                інтереси клієнтів у державних судах України по аналогічним спорах, а також в МКАС і МАК при ТПП України
-              </p>
+            <div class="contacts__social">
+              <a class="contacts__social-link" href="#">
+                <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_40086_1484)">
+                    <path class="contacts__social-img"
+                      d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z"
+                      fill="#24A3FF" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_40086_1484">
+                      <rect width="38" height="38" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <a class="contacts__social-link" href="">Наша сторінка в фейсбуці</a>
             </div>
           </div>
+
+          <form class="contacts__form form" action="https://tests.fomenko.top/echo/index.php" method="post">
+            <h2 class="form__title">Ми хотіли б Вам допомогти</h2>
+
+            <input class="form__name" type="text" name="name" id="" placeholder="Iм’я">
+            <input class="form__text" type="text" name="message" id="" placeholder="Повідомлення">
+            <p class="form__title-text">Як вам відповісти?</p>
+            <input class="form__tel" type="tel" name="tel" id="" placeholder="Номер телефона">
+            <input class="form__email" type="email" name="email" id="" placeholder="Чи email">
+
+
+            <input class="form__buttom" type="submit" value="Надіслати запит">
+          </form>
+        </div>
+      </div>
     </section>
+
   </main>
 
   <footer class="footer">
     <div class="container footer__container footer__container--alt">
       <div class="footer__contacts-wrap">
         <address class="footer__contacts">
-          <p class="footer__adress"><span class="footer__adress-title">Одеса</span>, Адміральський пр., 3</p>
+          <p class="footer__adress"><span class="footer__adress-title"></span>Одеса, Адміральський пр., 3</p>
           <a class="footer__adress-link"
             href="https://www.google.com/maps?q=%D0%9E%D0%B4%D0%B5%D1%81%D0%B0,+%D0%90%D0%B4%D0%BC%D1%96%D1%80%D0%B0%D0%BB%D1%8C%D1%81%D1%8C%D0%BA%D0%B8%D0%B9+%D0%BF%D1%80.,+3&um=1&ie=UTF-8&sa=X&ved=2ahUKEwiUn9HohcD7AhVwQ0EAHQjmD-EQ_AUoAXoECAIQAw"
             target="_blank">Подивитися

@@ -1,0 +1,100 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.contacts {
+  &__form {
+  }
+}
+.form {
+  background: #f5f5fa;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+  width: 527px;
+  height: 576px;
+  justify-content: space-between;
+  padding: 20px;
+
+  @include sm {
+    margin-left: -20px;
+    margin-right: -20px;
+    width: 100vw;
+  }
+  &__title {
+    @include md-min {
+      font-size: $font-size-32;
+      line-height: 38px;
+      background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+
+    @include md {
+      font-size: $font-size-22;
+      line-height: 26px;
+      color: $color-accent;
+      font-weight: 500;
+    }
+  }
+
+  &__name {
+    max-width: 487px;
+    height: 47px;
+    background: $color-white;
+    border-radius: 8px;
+    border: none;
+  }
+
+  &__text {
+    max-width: 487px;
+    height: 180px;
+    background: $color-white;
+    border-radius: 8px;
+    border: none;
+  }
+
+  &__title-text {
+    font-size: $font-size-14;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $color-grey-bg-text;
+    font-weight: $font-weight-700;
+  }
+  &__tel {
+    max-width: 487px;
+    height: 47px;
+    background: #ffffff;
+    border-radius: 8px;
+    border: none;
+  }
+
+  &__email {
+    max-width: 487px;
+    height: 47px;
+    background: #ffffff;
+    border-radius: 8px;
+    border: none;
+  }
+
+  &__buttom {
+    background: $color-active-regular;
+    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+    border-radius: 12px;
+    width: 250px;
+    height: 50px;
+
+    font-size: $font-size-14;
+    line-height: 17px;
+    text-align: center;
+    color: $color-white;
+    font-weight: $font-weight-500;
+    border: none;
+    margin-right: auto;
+    margin-left: auto;
+    cursor: pointer;
+  }
+}
