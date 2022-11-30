@@ -27,9 +27,79 @@
   }
   &__img {
     width: 100%;
+
+    &--alt {
+      max-width: 906px;
+      border-radius: 18px;
+      margin-bottom: 40px;
+
+      @include md {
+        margin-bottom: 20px;
+      }
+
+      @include sm {
+        border-radius: 18px 18px 0 0;
+        width: 100vw;
+      }
+    }
+
+    &--sec {
+      max-width: 640px;
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 15px;
+    }
   }
 
+  &__title {
+    &--alt {
+      font-size: 32px;
+      line-height: 38px;
+      color: #323264;
+      margin-bottom: 10px;
+      padding: 0 20px;
 
+      @include md {
+        font-size: $font-size-22;
+        line-height: 26px;
+        color: $color-main;
+        font-weight: $font-weight-500;
+      }
+    }
+  }
+
+  &__title-gen {
+    font-size: $font-size-42;
+    line-height: 50px;
+    background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 20px;
+
+    @include md {
+      font-size: $font-size-32;
+      line-height: 38px;
+    }
+
+    @include sm {
+      padding: 0 20px;
+    }
+  }
+
+  &__title-sec {
+    font-size: $font-size-24;
+    line-height: 28px;
+    color: $color-main-alt;
+    padding: 10px 20px 10px 20px;
+
+    @include md {
+      font-size: $font-size-18;
+      line-height: 21px;
+    }
+  }
 
   &__title-link {
     display: block;
@@ -68,6 +138,10 @@
     @include xs-min {
       border-bottom: 4px solid $color-grey-bg-separator;
     }
+
+    &--alt {
+      border-bottom: 4px solid $color-grey-bg-separator;
+    }
   }
 
   &__desription {
@@ -81,5 +155,71 @@
     @include xs {
       display: none;
     }
+
+    &--alt {
+      font-size: $font-size-18;
+      line-height: 26px;
+      @include xs {
+        display: block;
+      }
+    }
+
+    &--alt span {
+      font-size: $font-size-18;
+      line-height: 26px;
+      text-align: right;
+      color: $color-accent;
+      font-weight: $font-weight-700;
+      margin-left: 20px;
+      margin-right: 5px;
+    }
+
+    &--list {
+      padding: 10px 20px;
+
+      @include md {
+        padding: 0 20px;
+      }
+
+      @include sm {
+        padding: 0 2 0px;
+      }
+    }
+  }
+
+  &__desription-footer {
+    line-height: 22px;
+    text-align: center;
+    color: $color-grey-bg-text;
+    margin-bottom: 30px;
+    padding: 0 20px;
+
+    @include md {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap: $gap-sm;
+    margin-left: 20px;
+    border-top: 4px solid $color-grey-bg-separator;
+    padding-top: 20px;
+
+    @include sm {
+      justify-content: center;
+    }
+  }
+
+  &__social-link {
+    background: $color-grey-bg;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+  }
+
+  &__social-img {
   }
 }
