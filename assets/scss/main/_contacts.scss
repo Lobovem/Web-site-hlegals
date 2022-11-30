@@ -90,9 +90,11 @@
 
     color: $color-active-regular;
     font-weight: $font-weight-700;
-  }
 
-  &__social-img {
+    transition: 0.2s linear;
+    &:hover {
+      color: $color-accent;
+    }
   }
 
   &__map-box {
@@ -104,11 +106,5 @@
   &__map {
     height: 600px;
     width: 100%;
-  }
-}
-.container {
-}
-.footer {
-  &__adress-title {
   }
 }

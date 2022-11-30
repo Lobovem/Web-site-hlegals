@@ -46,6 +46,14 @@
     background: $color-white;
     border-radius: 8px;
     border: none;
+    padding: 10px;
+
+    &:hover {
+      outline: 1px solid $color-accent;
+    }
+    &:focus {
+      outline: 2px solid $color-accent;
+    }
   }
 
   &__text {
@@ -54,6 +62,13 @@
     background: $color-white;
     border-radius: 8px;
     border: none;
+    padding: 10px;
+    &:hover {
+      outline: 1px solid $color-accent;
+    }
+    &:focus {
+      outline: 2px solid $color-accent;
+    }
   }
 
   &__title-text {
@@ -70,6 +85,13 @@
     background: #ffffff;
     border-radius: 8px;
     border: none;
+    padding: 10px;
+    &:hover {
+      outline: 1px solid $color-accent;
+    }
+    &:focus {
+      outline: 2px solid $color-accent;
+    }
   }
 
   &__email {
@@ -78,11 +100,23 @@
     background: #ffffff;
     border-radius: 8px;
     border: none;
+    padding: 10px;
+    &:hover {
+      outline: 1px solid $color-accent;
+    }
+    &:focus {
+      outline: 2px solid $color-accent;
+    }
   }
 
   &__buttom {
     margin-left: auto;
     margin-right: auto;
+
+    &:focus {
+      background: $color-active-hover;
+      outline: none;
+    }
   }
 }
 
@@ -90,5 +124,4 @@
   font-size: $font-size-18;
   line-height: 26px;
   color: $color-grey-bg-text;
-  padding: 10px;
 }

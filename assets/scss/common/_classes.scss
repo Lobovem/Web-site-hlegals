@@ -96,3 +96,31 @@
     background: $color-active-hover;
   }
 }
+
+.social-img {
+  transition: 0.2s linear;
+  &:hover {
+    fill: $color-accent;
+  }
+}
+
+.adress-link {
+  transition: 0.2s linear;
+  &:hover {
+    color: $color-accent;
+  }
+}
+
+.email-link {
+  transition: 0.2s linear;
+  &:hover {
+    color: $color-accent;
+  }
+}
+
+.phone-link {
+  transition: 0.2s linear;
+  &:hover {
+    color: $color-accent;
+  }
+}

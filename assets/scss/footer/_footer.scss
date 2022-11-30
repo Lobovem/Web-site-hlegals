@@ -3,12 +3,7 @@
 
 .footer {
   background: $color-grey-bg;
-  &__social-img {
-    transition: 0.2s linear;
-    &:hover {
-      fill: $color-accent;
-    }
-  }
+
   &__container {
     display: flex;
     flex-wrap: wrap;
@@ -92,29 +87,17 @@
   }
 
   &__phone-link {
-    transition: 0.2s linear;
-
     color: $color-main-alt;
 
     font-weight: $font-weight-700;
     line-height: 19px;
-
-    &:hover {
-      color: $color-accent;
-    }
   }
 
   &__email-link {
-    transition: 0.2s linear;
-
     color: $color-active-regular;
 
     font-weight: 700;
     line-height: 14px;
-
-    &:hover {
-      color: $color-accent;
-    }
   }
 
   &__copyright {
