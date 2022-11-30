@@ -94,6 +94,17 @@
 
   &__social-img {
   }
+
+  &__map-box {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100vw;
+    background: $color-grey-bg;
+  }
+  &__map {
+    height: 600px;
+    width: 100%;
+  }
 }
 .container {
 }

@@ -73,3 +73,26 @@
     }
   }
 }
+
+.buttom {
+  width: 250px;
+  min-height: 50px;
+
+  cursor: pointer;
+  transition: 0.3s linear;
+  text-align: center;
+
+  color: $color-white;
+  border: none;
+  border-radius: 12px;
+  background: $color-active-regular;
+  box-shadow: 0 0 20px rgba(36, 163, 255, 0.5);
+
+  font-size: $font-size-14;
+  font-weight: 700;
+  line-height: 17px;
+
+  &:hover {
+    background: $color-active-hover;
+  }
+}
