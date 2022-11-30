@@ -74,6 +74,17 @@
     }
   }
 
+  &--primary {
+    @include md-min {
+      background: url(../img/bg-header-servise-item.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 100vw;
+      min-height: 500px;
+    }
+  }
+
   &__grid {
     display: grid;
 
