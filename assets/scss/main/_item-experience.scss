@@ -46,11 +46,10 @@
   }
 
   &__title {
+    order: 1;
   }
 
   &__title-link {
-    order: 1;
-
     color: $color-active-regular;
 
     font-size: $font-size-24;
