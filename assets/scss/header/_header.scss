@@ -309,4 +309,11 @@
       top: 89%;
     }
   }
+
+  &__scroll-img {
+    transition: 0.2s linear;
+    &:hover {
+      fill: $color-accent;
+    }
+  }
 }

@@ -81,6 +81,11 @@
     max-width: 413px;
     width: 100%;
     border-radius: 12px;
+    transition: 0.2s linear;
+
+    &:hover {
+      transform: scale(1.02);
+    }
 
     @include md {
       margin-bottom: 5px;
@@ -104,22 +109,9 @@
     margin-bottom: 5px;
     padding-right: 40px;
 
-    // &::after {
-    //   position: absolute;
-    //   content: "";
-    //   background-image: url(../img/right.svg);
-    //   background-repeat: no-repeat;
-    //   // background-position: 50% 50%;
-    //   right: 0;
-    //   padding: 20px;
-    // }
-  }
-
-  &__link {
-    @include xs-min {
-      // position: absolute;
-      // top: 0;
-      // right: 0;
+    transition: 0.2s linear;
+    &:hover {
+      color: $color-accent;
     }
   }
 
@@ -129,6 +121,13 @@
 
     @include sm {
       margin-bottom: 10px;
+    }
+  }
+
+  &__link-img {
+    transition: 0.2s linear;
+    &:hover {
+      transform: scale(1.3);
     }
   }
 }

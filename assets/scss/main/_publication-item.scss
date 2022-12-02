@@ -221,5 +221,10 @@
   }
 
   &__social-img {
+    transition: 0.2s linear;
+
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 }

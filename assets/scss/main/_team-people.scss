@@ -65,6 +65,7 @@
     line-height: 22px;
     color: $color-grey-bg-text;
     display: inline-block;
+    font-weight: $font-weight-500;
   }
 
   &__email {
@@ -72,6 +73,11 @@
     display: inline-block;
     color: $color-active-regular;
     position: relative;
+    font-weight: $font-weight-500;
+    transition: 0.2s linear;
+    &:hover {
+      color: $color-accent;
+    }
 
     &::before {
       content: "";
@@ -94,6 +100,12 @@
     color: $color-active-regular;
     display: inline-block;
     position: relative;
+    font-weight: $font-weight-500;
+
+    transition: 0.2s linear;
+    &:hover {
+      color: $color-accent;
+    }
     &::before {
       content: "";
       position: absolute;
