@@ -65,21 +65,14 @@
     }
   }
 
-  &__indicators {
-    display: none;
+  &__indicators-alt {
     justify-content: center;
+    display: flex;
 
     gap: 14px;
-    @include md {
-      display: flex;
-    }
-
-    &--alt {
-      display: flex;
-    }
   }
 
-  &__indicator {
+  &__indicator-alt {
     width: 16px;
     height: 16px;
 

@@ -16,8 +16,7 @@ menuBtn.addEventListener('click', (e) => {
 
 // считали DOM элементы
 const headersList = document.querySelectorAll('.slider__header');
-const indicatorsList = document.querySelectorAll('.slider__indicator');
-const descriptionsList = document.querySelectorAll('.slider__note-description');
+const indicatorsList = document.querySelectorAll('.slider__indicator-alt');
 
 let index = 0;
 let interval = 5000;
