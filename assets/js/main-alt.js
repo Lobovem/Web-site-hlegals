@@ -13,3 +13,27 @@ menuBtn.addEventListener('click', (e) => {
   }
 });
 
+// Горизонтальный слайдер. Считали DOM элементы
+const headersLis = document.querySelectorAll('.slider-alt');
+const indicatorsLis = document.querySelectorAll('.slider-alt__indicator-alt');
+
+let index = 0;
+let interval = 5000;
+let heightsArr = [];
+let heightMax = null;
+
+setInterval(() => {
+  // снимаем классы active для первых элементов
+  headersLis[index].classList.toggle('active');
+  indicatorsLis[index].classList.toggle('active');
+  // увеличиваем индекс, пока не превышено количество элементов
+  index = (index + 1) % headersLis.length;
+  // ставим классы active следующим элементам
+  headersLis[index].classList.toggle('active');
+  indicatorsLis[index].classList.toggle('active');
+}, interval);
+
+// вычисление и изменение высоты блока описания под максимальный текст
+descriptionsList.forEach(el => heightsArr.push(el.clientHeight));
+heightMax = Math.max(...heightsArr);
+descriptionsList.forEach(el => el.style.height = `${heightMax}px`);

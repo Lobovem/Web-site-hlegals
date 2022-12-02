@@ -24,19 +24,27 @@
     margin-bottom: 30px;
 
     @include lg {
-      flex-wrap: wrap;
-      justify-content: space-evenly;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include sm {
+      gap: $gap;
     }
   }
 
   &__item {
     height: 109px;
-    width: 300px;
-    background: #ffffff;
+    flex: 1;
+    background: $color-white;
     border-radius: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include sm {
+      height: 57px;
+    }
   }
 
   &__logo {

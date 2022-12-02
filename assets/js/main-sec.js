@@ -15,8 +15,8 @@ menuBtn.addEventListener('click', (e) => {
 
 
 // Горизонтальный слайдер. Считали DOM элементы
-const headersList = document.querySelectorAll('.slider-alt');
-const indicatorsList = document.querySelectorAll('.slider-alt__indicator-alt');
+const headersLis = document.querySelectorAll('.slider-alt');
+const indicatorsLis = document.querySelectorAll('.slider-alt__indicator-alt');
 
 let index = 0;
 let interval = 5000;
@@ -25,13 +25,13 @@ let heightMax = null;
 
 setInterval(() => {
   // снимаем классы active для первых элементов
-  headersList[index].classList.toggle('active');
-  indicatorsList[index].classList.toggle('active');
+  headersLis[index].classList.toggle('active');
+  indicatorsLis[index].classList.toggle('active');
   // увеличиваем индекс, пока не превышено количество элементов
-  index = (index + 1) % headersList.length;
+  index = (index + 1) % headersLis.length;
   // ставим классы active следующим элементам
-  headersList[index].classList.toggle('active');
-  indicatorsList[index].classList.toggle('active');
+  headersLis[index].classList.toggle('active');
+  indicatorsLis[index].classList.toggle('active');
 }, interval);
 
 // вычисление и изменение высоты блока описания под максимальный текст
