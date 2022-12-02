@@ -14,9 +14,9 @@ menuBtn.addEventListener('click', (e) => {
 });
 
 
-// считали DOM элементы
-const headersList = document.querySelectorAll('.slider__header');
-const indicatorsList = document.querySelectorAll('.slider__indicator-alt');
+// Горизонтальный слайдер. Считали DOM элементы
+const headersList = document.querySelectorAll('.slider-alt');
+const indicatorsList = document.querySelectorAll('.slider-alt__indicator-alt');
 
 let index = 0;
 let interval = 5000;

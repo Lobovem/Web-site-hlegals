@@ -1,0 +1,31 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.slider-alt {
+  user-select: none;
+  display: none;
+
+  &.active {
+    display: grid;
+  }
+
+  &__indicators-alt {
+    justify-content: center;
+    display: flex;
+    gap: 14px;
+  }
+
+  &__indicator-alt {
+    width: 16px;
+    height: 16px;
+
+    opacity: 0.2;
+    border-radius: 8px;
+    background: $color-active-regular;
+    transition: 0.2s linear;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+}

@@ -2,30 +2,112 @@
 @use "../mixins" as *;
 
 .slider {
+  display: flex;
+
+  color: $color-white;
+
+  @include md-min {
+    gap: 80px;
+  }
+  @include md {
+    flex-direction: column;
+  }
+
+  &__headers {
+    position: relative;
+
+    display: flex;
+    flex-basis: 0;
+    flex-direction: column;
+    flex-grow: 2;
+
+    gap: $gap;
+    @include md-min {
+      &:after {
+        position: absolute;
+        top: 0;
+        right: -42px;
+
+        width: 4px;
+        height: 100%;
+
+        content: "";
+
+        background-color: $color-grey-bg-separator;
+      }
+    }
+  }
+
   &__header {
     position: relative;
 
     user-select: none;
-    display: none;
+
+    color: $color-grey-bg-text;
+
+    font-weight: 700;
+    line-height: 50px;
+
+    @include md-min {
+      text-align: right;
+
+      font-size: 42px;
+    }
+    @include md {
+      display: none;
+
+      margin-bottom: 10px;
+
+      letter-spacing: 1px;
+      text-transform: uppercase;
+
+      font-size: $font-size-14;
+      line-height: 17px;
+    }
 
     &.active {
-      display: grid;
-    }
-    span {
-      background: linear-gradient(90.13deg, #ef8080 0.84%, #f0145a 99.96%);
-      -webkit-background-clip: text;
-      background-clip: text;
+      @include md-min {
+        &:after {
+          position: absolute;
+          z-index: 1;
+          top: 0;
+          right: -42px;
 
-      -webkit-text-fill-color: transparent;
+          width: 4px;
+          height: 100%;
+
+          content: "";
+
+          background-color: $color-accent;
+        }
+      }
+      @include md {
+        display: block;
+      }
+      span {
+        background: linear-gradient(90.13deg, #ef8080 0.84%, #f0145a 99.96%);
+        -webkit-background-clip: text;
+        background-clip: text;
+
+        -webkit-text-fill-color: transparent;
+      }
     }
   }
 
   &__notes {
+    display: flex;
+    align-items: center;
+    flex-basis: 0;
+    flex-grow: 3;
+
+    margin-bottom: 20px;
   }
 
   &__note {
     position: absolute;
     z-index: -9999;
+
+    max-width: 600px;
 
     opacity: 0;
     &.active {
@@ -65,14 +147,21 @@
     }
   }
 
-  &__indicators-alt {
+  &__indicators {
+    display: none;
     justify-content: center;
-    display: flex;
 
     gap: 14px;
+    @include md {
+      display: flex;
+    }
+
+    &--alt {
+      display: flex;
+    }
   }
 
-  &__indicator-alt {
+  &__indicator {
     width: 16px;
     height: 16px;
 
