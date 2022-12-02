@@ -282,13 +282,10 @@
     position: absolute;
 
     height: 500px;
+    width: 100%;
 
     @include sm {
-      width: 100vw;
-
       object-fit: cover;
-    }
-    @include sm {
       top: 32%;
     }
   }

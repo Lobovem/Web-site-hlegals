@@ -183,5 +183,8 @@
     line-height: 26px;
     color: $color-white;
     padding-bottom: 20px;
+    &::marker {
+      color: $color-accent;
+    }
   }
 }
