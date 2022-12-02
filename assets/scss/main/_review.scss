@@ -107,6 +107,30 @@
 
         background-image: url(../img/author-small.png);
         background-repeat: no-repeat;
+        width: 60px;
+        height: 60px;
+        background-size: cover;
+        border-radius: 30px;
+      }
+
+      &--team-2 {
+        &::before {
+          background-image: url(../img/team-2.png);
+          width: 60px;
+          height: 60px;
+          background-size: cover;
+          border-radius: 30px;
+          background-position: 50% 50%;
+        }
+      }
+
+      &--team-3 {
+        &::before {
+          background-image: url(../img/team-3.png);
+          width: 60px;
+          height: 60px;
+          background-position: 50% 50%;
+        }
       }
     }
   }
