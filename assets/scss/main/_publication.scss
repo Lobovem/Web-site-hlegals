@@ -21,9 +21,9 @@
     content: "";
 
     background: linear-gradient(
-      180deg,
-      rgba(245, 245, 250, 0) 0%,
-      #f5f5fa 86.5%
+    180deg,
+    rgba(245, 245, 250, 0) 0%,
+    #f5f5fa 86.5%
     );
 
     @media (min-width: 906px) {
@@ -38,7 +38,8 @@
   &--alt {
     padding-top: 40px;
     padding-bottom: 150px;
-    border-radius: 12px 12px 0px 0px;
+
+    border-radius: 12px 12px 0 0;
     &::after {
       display: none;
     }
@@ -84,6 +85,7 @@
     right: 50%;
     bottom: 60px;
     left: 50%;
+
     transform: translateX(-50%);
 
     @include xs {

@@ -4,15 +4,24 @@
 .sevise-item {
   position: relative;
 
-  padding-top: 180px;
   margin-bottom: 20px;
+  padding-top: 180px;
+
+  border-radius: 0 0 12px 12px;
   background: linear-gradient(
-    197.57deg,
-    #323264 11.93%,
-    #323264 67.17%,
-    #643e72 105.46%
+  197.57deg,
+  #323264 11.93%,
+  #323264 67.17%,
+  #643e72 105.46%
   );
-  border-radius: 0px 0px 12px 12px;
+
+  @include lg {
+    padding-top: 250px;
+  }
+  @include sm {
+    margin-bottom: 50px;
+    padding-top: 150px;
+  }
 
   &::after {
     position: absolute;
@@ -34,15 +43,6 @@
     @include sm {
       width: 90vw;
     }
-  }
-
-  @include lg {
-    padding-top: 250px;
-  }
-
-  @include sm {
-    padding-top: 150px;
-    margin-bottom: 50px;
   }
 
   &::before {
@@ -69,52 +69,61 @@
   }
 
   &__wrap {
-    display: flex;
     position: relative;
     z-index: 9;
-    max-width: 861px;
-    margin-left: auto;
-    margin-right: auto;
+
+    display: flex;
     flex-direction: column;
+
+    max-width: 861px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   &__img-box {
     display: flex;
-    justify-content: center;
     align-items: center;
-    background: $color-white;
-    border-radius: 24px;
+    justify-content: center;
+
     width: 92px;
     height: 92px;
-    margin-bottom: 20px;
     margin-right: auto;
+    margin-bottom: 20px;
     margin-left: auto;
+
+    border-radius: 24px;
+    background: $color-white;
   }
 
   &__title {
-    font-size: $font-size-42;
-    line-height: 50px;
+    margin-bottom: 20px;
+
     text-align: center;
 
     background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    margin-bottom: 20px;
+            background-clip: text;
+
+    font-size: $font-size-42;
+    line-height: 50px;
 
     @include sm {
       font-size: 32px;
       line-height: 38px;
     }
+    -webkit-text-fill-color: transparent;
+            text-fill-color: transparent;
   }
 
   &__description {
+    margin-bottom: 40px;
+
+    text-align: center;
+
+    color: $color-white;
+
     font-size: $font-size-21;
     line-height: 30px;
-    text-align: center;
-    color: $color-white;
-    margin-bottom: 40px;
 
     @include sm {
       font-size: 18px;
@@ -123,18 +132,20 @@
   }
 
   &__buttom {
+    margin-right: auto;
     margin-bottom: 60px;
     margin-left: auto;
-    margin-right: auto;
   }
 
   &__info {
     display: flex;
     flex-direction: column;
+
     max-width: 1092px;
     margin-right: auto;
     margin-left: auto;
     padding-bottom: 80px;
+
     border-top: 4px solid #9898b2;
 
     @include sm {
@@ -143,12 +154,14 @@
   }
 
   &__info-title {
-    padding-top: 20px;
-    font-size: $font-size-24;
-    line-height: 28px;
-    font-weight: $font-weight-500;
     margin-bottom: 20px;
+    padding-top: 20px;
+
     color: $color-white;
+
+    font-size: $font-size-24;
+    font-weight: $font-weight-500;
+    line-height: 28px;
 
     @include sm {
       font-size: $font-size-18;
@@ -163,7 +176,6 @@
     @include sm-min {
       gap: 40px;
     }
-
     @include sm {
       flex-direction: column;
     }
@@ -179,10 +191,12 @@
   }
 
   &__info-text {
+    padding-bottom: 20px;
+
+    color: $color-white;
+
     font-size: $font-size-18;
     line-height: 26px;
-    color: $color-white;
-    padding-bottom: 20px;
     &::marker {
       color: $color-accent;
     }

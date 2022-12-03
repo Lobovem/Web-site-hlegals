@@ -2,45 +2,51 @@
 @use "../mixins" as *;
 
 .archievments {
-  background: $color-grey-bg;
-  border-radius: 12px 12px 0px 0px;
   padding-top: 28px;
   padding-bottom: 28px;
+
+  border-radius: 12px 12px 0 0;
+  background: $color-grey-bg;
   &__title {
-    font-size: $font-size-14;
-    line-height: 17px;
+    margin-bottom: 30px;
+
     text-align: center;
     letter-spacing: 1px;
     text-transform: uppercase;
 
     color: $color-main;
-    margin-bottom: 30px;
+
+    font-size: $font-size-14;
+    line-height: 17px;
   }
 
   &__item-box {
     display: flex;
     justify-content: space-between;
-    gap: $gap-xl;
+
     margin-bottom: 30px;
 
+    gap: $gap-xl;
     @include lg {
       display: grid;
+
       grid-template-columns: repeat(2, 1fr);
     }
-
     @include sm {
       gap: $gap;
     }
   }
 
   &__item {
-    height: 109px;
-    flex: 1;
-    background: $color-white;
-    border-radius: 12px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    flex: 1;
+    justify-content: center;
+
+    height: 109px;
+
+    border-radius: 12px;
+    background: $color-white;
 
     @include sm {
       height: 57px;

@@ -30,70 +30,78 @@
 
     &--alt {
       max-width: 906px;
-      border-radius: 18px;
       margin-bottom: 40px;
+
+      border-radius: 18px;
 
       @include md {
         margin-bottom: 20px;
       }
-
       @include sm {
-        border-radius: 18px 18px 0 0;
         width: 100vw;
+
+        border-radius: 18px 18px 0 0;
       }
     }
 
     &--sec {
-      max-width: 640px;
       display: flex;
-      margin-left: auto;
+
+      max-width: 640px;
       margin-right: auto;
       margin-bottom: 15px;
+      margin-left: auto;
     }
   }
 
   &__title {
     &--alt {
-      font-size: 32px;
-      line-height: 38px;
-      color: #323264;
       margin-bottom: 10px;
       padding: 0 20px;
 
+      color: #323264;
+
+      font-size: 32px;
+      line-height: 38px;
+
       @include md {
-        font-size: $font-size-22;
-        line-height: 26px;
         color: $color-main;
+
+        font-size: $font-size-22;
         font-weight: $font-weight-500;
+        line-height: 26px;
       }
     }
   }
 
   &__title-gen {
-    font-size: $font-size-42;
-    line-height: 50px;
+    margin-bottom: 20px;
+
     background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    margin-bottom: 20px;
+            background-clip: text;
+
+    font-size: $font-size-42;
+    line-height: 50px;
 
     @include md {
       font-size: $font-size-32;
       line-height: 38px;
     }
-
     @include sm {
       padding: 0 20px;
     }
+    -webkit-text-fill-color: transparent;
+            text-fill-color: transparent;
   }
 
   &__title-sec {
+    padding: 10px 20px 10px 20px;
+
+    color: $color-main-alt;
+
     font-size: $font-size-24;
     line-height: 28px;
-    color: $color-main-alt;
-    padding: 10px 20px 10px 20px;
 
     @include md {
       font-size: $font-size-18;
@@ -159,19 +167,23 @@
     &--alt {
       font-size: $font-size-18;
       line-height: 26px;
+
       @include xs {
         display: block;
       }
     }
 
     &--alt span {
-      font-size: $font-size-18;
-      line-height: 26px;
-      text-align: right;
-      color: $color-accent;
-      font-weight: $font-weight-700;
-      margin-left: 20px;
       margin-right: 5px;
+      margin-left: 20px;
+
+      text-align: right;
+
+      color: $color-accent;
+
+      font-size: $font-size-18;
+      font-weight: $font-weight-700;
+      line-height: 26px;
     }
 
     &--list {
@@ -180,44 +192,50 @@
       @include md {
         padding: 0 20px;
       }
-
       @include sm {
-        padding: 0 2 0px;
+        padding: 0 2 0;
       }
     }
   }
 
   &__desription-footer {
-    line-height: 22px;
-    text-align: center;
-    color: $color-grey-bg-text;
     margin-bottom: 30px;
     padding: 0 20px;
 
+    text-align: center;
+
+    color: $color-grey-bg-text;
+
+    line-height: 22px;
+
     @include md {
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
   }
 
   &__actions {
     display: flex;
-    gap: $gap-sm;
+
     margin-left: 20px;
-    border-top: 4px solid $color-grey-bg-separator;
     padding-top: 20px;
 
+    border-top: 4px solid $color-grey-bg-separator;
+
+    gap: $gap-sm;
     @include sm {
       justify-content: center;
     }
   }
 
   &__social-link {
-    background: $color-grey-bg;
-    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
+
     padding: 8px;
+
+    border-radius: 12px;
+    background: $color-grey-bg;
   }
 
   &__social-img {

@@ -9,28 +9,36 @@
   }
   &__title {
     max-width: 864px;
-    font-size: $font-size-42;
-    line-height: 50px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-bottom: 80px;
+    margin-left: auto;
 
     background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 80px;
-    margin-top: 20px;
+            background-clip: text;
+
+    font-size: $font-size-42;
+    line-height: 50px;
 
     @include md {
+      margin-bottom: 20px;
+
       font-size: $font-size-32;
       line-height: 38px;
-      margin-bottom: 20px;
     }
+    -webkit-text-fill-color: transparent;
+            text-fill-color: transparent;
   }
 
   &__grid {
-    gap: $gap-xl;
+    gap: $gap-xl;
+    @include md {
+      gap: $gap;
+    }
+    @include sm {
+      display: grid;
+    }
     @media (min-width: 905.9px) {
       display: flex;
       flex-wrap: wrap;
@@ -39,33 +47,27 @@
 
     @media (max-width: 905.9px) and (min-width: 576px) {
       display: grid;
+
       grid-template-columns: repeat(2, 1fr);
-    }
-
-    @include md {
-      gap: $gap;
-    }
-
-    @include sm {
-      display: grid;
     }
   }
 
   &__item {
     max-width: 413px;
+
     @include sm {
       display: flex;
+
       gap: $gap;
     }
   }
 
   &__text-box {
     @include sm-min {
-      flex-direction: row;
       display: flex;
+      flex-direction: row;
       justify-content: space-between;
     }
-
     @include sm {
       display: flex;
       flex-direction: column;
@@ -73,51 +75,54 @@
     }
   }
 
-  &__text {
-  }
+
 
   &__foto {
-    margin-bottom: 15px;
-    max-width: 413px;
     width: 100%;
-    border-radius: 12px;
+    max-width: 413px;
+    margin-bottom: 15px;
+
     transition: 0.2s linear;
 
-    &:hover {
-      transform: scale(1.02);
-    }
+    border-radius: 12px;
 
     @include md {
       margin-bottom: 5px;
     }
-
     @include sm {
       width: 200px;
     }
-
     @include xs {
       width: 130px;
+    }
+
+    &:hover {
+      transform: scale(1.02);
     }
   }
 
   &__name {
     position: relative;
-    font-weight: 500;
-    font-size: $font-size-18;
-    line-height: 21px;
-    color: $color-main;
+
     margin-bottom: 5px;
     padding-right: 40px;
 
     transition: 0.2s linear;
+
+    color: $color-main;
+
+    font-size: $font-size-18;
+    font-weight: 500;
+    line-height: 21px;
     &:hover {
       color: $color-accent;
     }
   }
 
   &__work {
-    line-height: 22px;
     color: $color-grey-bg-text;
+
+    line-height: 22px;
 
     @include sm {
       margin-bottom: 10px;

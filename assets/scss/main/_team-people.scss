@@ -4,17 +4,18 @@
 .team-people {
   &__flex {
     display: flex;
-    gap: $gap-xl;
     justify-content: center;
+
     margin-bottom: 80px;
 
+    gap: $gap-xl;
     @include lg {
       flex-wrap: wrap;
     }
-
     @include sm {
-      gap: $gap;
       margin-bottom: 40px;
+
+      gap: $gap;
     }
   }
 
@@ -31,63 +32,77 @@
   }
 
   &__title {
-    font-weight: $font-weight-700;
-    font-size: $font-size-42;
-    line-height: 50px;
+    margin-bottom: 10px;
+
     background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    margin-bottom: 10px;
+            background-clip: text;
+
+    font-size: $font-size-42;
+    font-weight: $font-weight-700;
+    line-height: 50px;
 
     @include sm {
       font-size: $font-size-32;
       line-height: 38px;
     }
+    -webkit-text-fill-color: transparent;
+            text-fill-color: transparent;
   }
 
   &__actions {
-    display: flex;
-    gap: $gap-lg;
-    margin-bottom: 20px;
     position: relative;
+
+    display: flex;
     align-items: center;
 
+    margin-bottom: 20px;
+
+    gap: $gap-lg;
     @include sm {
-      flex-direction: column;
       align-items: flex-start;
+      flex-direction: column;
+
       gap: $gap-sm;
     }
   }
 
   &__work {
-    line-height: 22px;
-    color: $color-grey-bg-text;
     display: inline-block;
+
+    color: $color-grey-bg-text;
+
     font-weight: $font-weight-500;
+    line-height: 22px;
   }
 
   &__email {
-    line-height: 19px;
-    display: inline-block;
-    color: $color-active-regular;
     position: relative;
-    font-weight: $font-weight-500;
+
+    display: inline-block;
+
     transition: 0.2s linear;
+
+    color: $color-active-regular;
+
+    font-weight: $font-weight-500;
+    line-height: 19px;
     &:hover {
       color: $color-accent;
     }
 
     &::before {
-      content: "";
       position: absolute;
-      height: 6px;
+      top: 8px;
+      left: -18px;
+
       width: 6px;
+      height: 6px;
+
+      content: "";
+
       border-radius: 3px;
       background: #e6e6f0;
-      left: -18px;
-      top: 8px;
 
       @include sm {
         display: none;
@@ -96,25 +111,32 @@
   }
 
   &__social {
-    line-height: 19px;
-    color: $color-active-regular;
-    display: inline-block;
     position: relative;
-    font-weight: $font-weight-500;
+
+    display: inline-block;
 
     transition: 0.2s linear;
+
+    color: $color-active-regular;
+
+    font-weight: $font-weight-500;
+    line-height: 19px;
     &:hover {
       color: $color-accent;
     }
     &::before {
-      content: "";
       position: absolute;
-      height: 6px;
+      top: 8px;
+      left: -18px;
+
       width: 6px;
+      height: 6px;
+
+      content: "";
+
       border-radius: 3px;
       background: #e6e6f0;
-      left: -18px;
-      top: 8px;
+
       @include sm {
         display: none;
       }
@@ -123,6 +145,7 @@
 
   &__text-box {
     padding-top: 40px;
+
     border-top: 4px solid #e6e6f0;
 
     @include sm {
@@ -131,19 +154,23 @@
   }
 
   &__text {
+    color: $color-black;
+
     font-size: $font-size-18;
     line-height: 26px;
-    color: $color-black;
   }
 
   &__title-text {
-    font-size: $font-size-14;
-    line-height: 17px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: $color-main;
     margin-top: 40px;
     margin-bottom: 10px;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: $color-main;
+
+    font-size: $font-size-14;
+    line-height: 17px;
 
     @include sm {
       margin-top: 20px;

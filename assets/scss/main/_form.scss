@@ -1,52 +1,54 @@
 @use "../presets" as *;
 @use "../mixins" as *;
 
-.contacts {
-  &__form {
-  }
-}
+
 .form {
-  background: #f5f5fa;
-  border-radius: 12px;
   display: flex;
   flex-direction: column;
-  gap: $gap;
+  justify-content: space-between;
+
   width: 527px;
   height: 576px;
-  justify-content: space-between;
   padding: 20px;
 
+  border-radius: 12px;
+  background: #f5f5fa;
+
+  gap: $gap;
   @include sm {
-    margin-left: -20px;
-    margin-right: -20px;
     width: 100vw;
+    margin-right: -20px;
+    margin-left: -20px;
   }
   &__title {
     @include md-min {
-      font-size: $font-size-32;
-      line-height: 38px;
       background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
       -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      text-fill-color: transparent;
-    }
+              background-clip: text;
 
+      font-size: $font-size-32;
+      line-height: 38px;
+
+      -webkit-text-fill-color: transparent;
+              text-fill-color: transparent;
+    }
     @include md {
-      font-size: $font-size-22;
-      line-height: 26px;
       color: $color-accent;
+
+      font-size: $font-size-22;
       font-weight: 500;
+      line-height: 26px;
     }
   }
 
   &__name {
     max-width: 487px;
     height: 47px;
-    background: $color-white;
-    border-radius: 8px;
-    border: none;
     padding: 10px;
+
+    border: none;
+    border-radius: 8px;
+    background: $color-white;
 
     &:hover {
       outline: 1px solid $color-accent;
@@ -59,10 +61,11 @@
   &__text {
     max-width: 487px;
     height: 180px;
-    background: $color-white;
-    border-radius: 8px;
-    border: none;
     padding: 10px;
+
+    border: none;
+    border-radius: 8px;
+    background: $color-white;
     &:hover {
       outline: 1px solid $color-accent;
     }
@@ -72,20 +75,23 @@
   }
 
   &__title-text {
-    font-size: $font-size-14;
-    line-height: 17px;
     letter-spacing: 1px;
     text-transform: uppercase;
+
     color: $color-grey-bg-text;
+
+    font-size: $font-size-14;
     font-weight: $font-weight-700;
+    line-height: 17px;
   }
   &__tel {
     max-width: 487px;
     height: 47px;
-    background: #ffffff;
-    border-radius: 8px;
-    border: none;
     padding: 10px;
+
+    border: none;
+    border-radius: 8px;
+    background: #ffffff;
     &:hover {
       outline: 1px solid $color-accent;
     }
@@ -97,10 +103,11 @@
   &__email {
     max-width: 487px;
     height: 47px;
-    background: #ffffff;
-    border-radius: 8px;
-    border: none;
     padding: 10px;
+
+    border: none;
+    border-radius: 8px;
+    background: #ffffff;
     &:hover {
       outline: 1px solid $color-accent;
     }
@@ -110,18 +117,19 @@
   }
 
   &__buttom {
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
 
     &:focus {
-      background: $color-active-hover;
       outline: none;
+      background: $color-active-hover;
     }
   }
 }
 
 ::placeholder {
+  color: $color-grey-bg-text;
+
   font-size: $font-size-18;
   line-height: 26px;
-  color: $color-grey-bg-text;
 }

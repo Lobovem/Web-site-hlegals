@@ -8,26 +8,26 @@
 
   @include lg {
     background: url(../img/bg-logo.svg) center 119% no-repeat,
-      linear-gradient(42.01deg, #323264 14.33%, #323264 60.39%, #7a425e 87.53%)
-        center no-repeat;
+    linear-gradient(42.01deg, #323264 14.33%, #323264 60.39%, #7a425e 87.53%)
+    center no-repeat;
   }
   @include md-min {
     padding-top: 48px;
 
     background: url(../img/bg-logo.svg) center 98% no-repeat,
-      linear-gradient(42.01deg, #323264 14.33%, #323264 60.39%, #7a425e 87.53%)
-        center no-repeat;
+    linear-gradient(42.01deg, #323264 14.33%, #323264 60.39%, #7a425e 87.53%)
+    center no-repeat;
   }
   @include md {
     padding-top: 22px;
 
     background: linear-gradient(
-        42.01deg,
-        #323264 14.33%,
-        #323264 51.39%,
-        #7a425e 87.53%
-      )
-      center no-repeat;
+    42.01deg,
+    #323264 14.33%,
+    #323264 51.39%,
+    #7a425e 87.53%
+    )
+    center no-repeat;
   }
   @include sm {
     min-height: 650px;
@@ -76,9 +76,26 @@
 
   &--primary {
     position: absolute;
+    z-index: 1;
+
     width: 100vw;
     min-height: 500px;
-    z-index: 1;
+
+    @include md-min {
+      background: url(../img/bg-header-servise-item.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    @include lg {
+      background: url(../img/bg-header-servise-item.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    @include md {
+      background: url(../img/bg-header-servise-item.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
 
     &::after {
       position: absolute;
@@ -86,26 +103,10 @@
       right: 0;
       bottom: -3px;
       left: 0;
+
       content: "";
 
       background: linear-gradient(to top, #323264 0, transparent 100%);
-    }
-    @include md-min {
-      background: url(../img/bg-header-servise-item.png);
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-
-    @include lg {
-      background: url(../img/bg-header-servise-item.png);
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-
-    @include md {
-      background: url(../img/bg-header-servise-item.png);
-      background-size: cover;
-      background-repeat: no-repeat;
     }
   }
 
@@ -146,6 +147,7 @@
       }
       @include sm {
         margin-bottom: 0;
+
         grid-template-columns: 4fr 3fr;
       }
     }
@@ -281,12 +283,13 @@
   &__img {
     position: absolute;
 
-    height: 500px;
     width: 100%;
+    height: 500px;
 
     @include sm {
-      object-fit: cover;
       top: 32%;
+
+      object-fit: cover;
     }
   }
 

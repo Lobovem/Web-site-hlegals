@@ -27,15 +27,13 @@
 .container-sm {
   width: min(100% - 40px, 906px);
 
-  margin-inline: auto;
-
   @include sm-min {
     width: min(100% - 40px, 906px);
   }
-
   @include sm {
     width: 100%;
   }
+  margin-inline: auto;
 }
 .section-link {
   position: relative;

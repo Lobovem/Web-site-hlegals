@@ -10,10 +10,9 @@
       display: grid;
 
       grid-auto-rows: auto;
-      grid-template-areas:
-        "it1 it1 it3 it3 it4"
-        "it2 it2 it3 it3 it4"
-        "it5 it6 it6 it7 it7";
+      grid-template-areas: "it1 it1 it3 it3 it4"
+      "it2 it2 it3 it3 it4"
+      "it5 it6 it6 it7 it7";
       grid-template-columns: 1.5fr 0.4fr 1.7fr 0.4fr 2fr;
     }
     @include sm {

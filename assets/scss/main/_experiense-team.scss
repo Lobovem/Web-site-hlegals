@@ -12,25 +12,28 @@
   }
 
   &__title {
-    font-size: $font-size-42;
-    line-height: 50px;
+    margin-bottom: 20px;
+
     background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    margin-bottom: 20px;
+            background-clip: text;
+
+    font-size: $font-size-42;
+    line-height: 50px;
 
     @include sm {
       font-size: $font-size-32;
       line-height: 38px;
     }
+    -webkit-text-fill-color: transparent;
+            text-fill-color: transparent;
   }
 
   &__description {
+    color: $color-black;
+
     font-size: $font-size-21;
     line-height: 30px;
-    color: $color-black;
 
     @include sm {
       font-size: $font-size-18;
@@ -44,61 +47,71 @@
     @include lg-min {
       max-width: 375px;
     }
-
     @include lg-sm {
       display: flex;
+
       gap: $gap;
     }
 
     &::after {
-      content: "";
       position: absolute;
 
+      content: "";
+
       @include lg-min {
-        border-left: 4px solid $color-grey-bg-separator;
-        height: 300px;
         top: 0;
         left: -22px;
-      }
 
+        height: 300px;
+
+        border-left: 4px solid $color-grey-bg-separator;
+      }
       @include lg {
-        border-top: 4px solid $color-grey-bg-separator;
-        left: 0;
-        right: 0;
         top: 0;
+        right: 0;
+        left: 0;
+
+        border-top: 4px solid $color-grey-bg-separator;
       }
     }
   }
   &__item {
     @include lg {
-      padding-top: 20px;
       flex: 1;
+
+      padding-top: 20px;
     }
   }
 
   &__item-img {
     display: inline-flex;
     align-items: center;
+
     margin-right: 10px;
   }
 
   &__item-text {
+    display: inline-block;
+
+    text-align: center;
+
+    background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+    -webkit-background-clip: text;
+            background-clip: text;
+
     font-size: $font-size-36;
     font-weight: $font-weight-700;
     line-height: 42px;
-    text-align: center;
-    background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
-    -webkit-background-clip: text;
+
     -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    display: inline-block;
+            text-fill-color: transparent;
   }
 
   &__item-description {
+    color: $color-main;
+
     font-size: $font-size-18;
     line-height: 21px;
-    color: $color-main;
 
     @include sm-min {
       margin-bottom: 30px;

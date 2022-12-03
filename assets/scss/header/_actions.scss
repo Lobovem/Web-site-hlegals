@@ -28,17 +28,17 @@
     font-weight: $font-weight-700;
     line-height: 14px;
 
-    grid-area: lang;
+    grid-area: lang;
+    @include sm {
+      color: $color-grey-bg-text;
+    }
 
     &--alt {
       color: $color-grey-bg-text;
       &:hover {
-        background: $color-accent;
         color: $color-white;
+        background: $color-accent;
       }
-    }
-    @include sm {
-      color: $color-grey-bg-text;
     }
     &:hover {
       padding: 4px;
@@ -69,13 +69,14 @@
     font-style: normal;
     line-height: 19px;
 
-    &--alt {
-      color: $color-grey-bg-text;
-      font-weight: $font-weight-500;
-    }
-
     @include sm {
       display: none;
+    }
+
+    &--alt {
+      color: $color-grey-bg-text;
+
+      font-weight: $font-weight-500;
     }
 
     &:hover {
@@ -99,13 +100,13 @@
     font-weight: $font-weight-700;
     line-height: 19px;
 
-    &--alt {
-      color: $color-grey-bg-text;
-    }
-
     @include sm {
       padding: 5px 0 5px 5px;
 
+      color: $color-grey-bg-text;
+    }
+
+    &--alt {
       color: $color-grey-bg-text;
     }
 

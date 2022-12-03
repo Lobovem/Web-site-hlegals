@@ -50,6 +50,8 @@
   }
 
   &__title-link {
+    transition: 0.2s linear;
+
     color: $color-active-regular;
 
     font-size: $font-size-24;
@@ -60,7 +62,6 @@
       font-size: $font-size-18;
       line-height: 21px;
     }
-    transition: 0.2s linear;
     &:hover {
       color: $color-accent;
     }
