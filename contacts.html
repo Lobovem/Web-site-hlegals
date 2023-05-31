@@ -102,7 +102,7 @@
               <a class="contacts__social-link" href="#">
                 <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_40086_1484)">
-                    <path class="contacts__social-img social-img"
+                    <path class="contacts__social-img"
                       d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z"
                       fill="#24A3FF" />
                   </g>
@@ -112,19 +112,21 @@
                     </clipPath>
                   </defs>
                 </svg>
+                <span>Наша сторінка в фейсбуці</span>
               </a>
-              <a class="contacts__social-link" href="">Наша сторінка в фейсбуці</a>
+              <!-- <a class="contacts__social-link" href="">Наша сторінка в фейсбуці</a> -->
             </div>
           </div>
 
           <form class="contacts__form form" action="https://tests.fomenko.top/echo/index.php" method="post">
             <h2 class="form__title">Ми хотіли б Вам допомогти</h2>
 
-            <input class="form__name" type="text" name="name" id="" placeholder="Iм’я">
-            <input class="form__text" type="text" name="message" id="" placeholder="Повідомлення">
+            <input class="form__name" type="text" name="name" id="" placeholder="Iм’я" required>
+            <input class="form__text" type="text" name="message" id="" placeholder="Повідомлення" required>
             <p class="form__title-text">Як вам відповісти?</p>
-            <input class="form__tel" type="number" name="tel" id="" placeholder="Номер телефона">
-            <input class="form__email" type="email" name="email" id="" placeholder="Чи email">
+            <input class="form__tel" type="number" name="tel" id="" placeholder="Номер телефона" required>
+            <input class="form__email" type="email" name="email" id="" placeholder="Чи email" required
+              pattern="^[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
 
 
             <input class="form__buttom buttom" type="submit" value="Надіслати запит">
@@ -158,7 +160,7 @@
             <a class="footer__social-link" href="#">
               <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_40086_1484)">
-                  <path class="footer__social-img"
+                  <path class="footer__social-img social-img"
                     d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z"
                     fill="#24A3FF" />
                 </g>

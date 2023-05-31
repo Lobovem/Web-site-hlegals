@@ -39,6 +39,7 @@
       border-radius: 18px;
     }
   }
+
   &__img {
     @include sm {
       width: 70%;
@@ -50,7 +51,7 @@
   }
 
   &__title-link {
-    transition: 0.2s linear;
+    transition: 0.4s;
 
     color: $color-active-regular;
 
@@ -62,6 +63,7 @@
       font-size: $font-size-18;
       line-height: 21px;
     }
+
     &:hover {
       color: $color-accent;
     }

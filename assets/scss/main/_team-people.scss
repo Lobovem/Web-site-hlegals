@@ -81,12 +81,13 @@
 
     display: inline-block;
 
-    transition: 0.2s linear;
+    transition: 0.4s;
 
     color: $color-active-regular;
 
     font-weight: $font-weight-500;
     line-height: 19px;
+
     &:hover {
       color: $color-accent;
     }
@@ -115,15 +116,17 @@
 
     display: inline-block;
 
-    transition: 0.2s linear;
+    transition: 0.4s;
 
     color: $color-active-regular;
 
     font-weight: $font-weight-500;
     line-height: 19px;
+
     &:hover {
       color: $color-accent;
     }
+
     &::before {
       position: absolute;
       top: 8px;

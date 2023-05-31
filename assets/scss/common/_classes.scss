@@ -24,6 +24,7 @@
 
   margin-inline: auto;
 }
+
 .container-sm {
   width: min(100% - 40px, 906px);
 
@@ -35,6 +36,7 @@
   }
   margin-inline: auto;
 }
+
 .section-link {
   position: relative;
 
@@ -43,7 +45,7 @@
   margin-bottom: 2px;
   padding: 2px 40px 2px 0;
 
-  transition: 0.2s linear;
+  transition: 0.4s;
   letter-spacing: 1.5px;
   text-transform: uppercase;
 
@@ -89,7 +91,7 @@
   min-height: 50px;
 
   cursor: pointer;
-  transition: 0.3s linear;
+  transition: 0.4s;
   text-align: center;
 
   color: $color-white;
@@ -108,28 +110,32 @@
 }
 
 .social-img {
-  transition: 0.2s linear;
+  transition: 0.4s;
+
   &:hover {
     fill: $color-accent;
   }
 }
 
 .adress-link {
-  transition: 0.2s linear;
+  transition: 0.4s;
+
   &:hover {
     color: $color-accent;
   }
 }
 
 .email-link {
-  transition: 0.2s linear;
+  transition: 0.4s;
+
   &:hover {
     color: $color-accent;
   }
 }
 
 .phone-link {
-  transition: 0.2s linear;
+  transition: 0.4s;
+
   &:hover {
     color: $color-accent;
   }

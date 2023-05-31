@@ -8,26 +8,21 @@
 
   @include lg {
     background: url(../img/bg-logo.svg) center 119% no-repeat,
-    linear-gradient(42.01deg, #323264 14.33%, #323264 60.39%, #7a425e 87.53%)
-    center no-repeat;
+    linear-gradient(42.01deg, #323264 14.33%, #323264 60.39%, #7a425e 87.53%) center no-repeat;
   }
   @include md-min {
     padding-top: 48px;
 
     background: url(../img/bg-logo.svg) center 98% no-repeat,
-    linear-gradient(42.01deg, #323264 14.33%, #323264 60.39%, #7a425e 87.53%)
-    center no-repeat;
+    linear-gradient(42.01deg, #323264 14.33%, #323264 60.39%, #7a425e 87.53%) center no-repeat;
   }
   @include md {
     padding-top: 22px;
 
-    background: linear-gradient(
-    42.01deg,
+    background: linear-gradient(42.01deg,
     #323264 14.33%,
     #323264 51.39%,
-    #7a425e 87.53%
-    )
-    center no-repeat;
+    #7a425e 87.53%) center no-repeat;
   }
   @include sm {
     min-height: 650px;
@@ -158,6 +153,7 @@
     @include md-sm {
       padding-top: 8px;
     }
+
     &--secondary {
       display: flex;
 
@@ -188,9 +184,11 @@
       font-size: $font-size-19;
       line-height: 22px;
     }
+
     &--alt {
       color: $color-main;
     }
+
     &::before {
       position: absolute;
       top: 0;
@@ -311,7 +309,8 @@
   }
 
   &__scroll-img {
-    transition: 0.2s linear;
+    transition: 0.4s;
+
     &:hover {
       fill: $color-accent;
     }

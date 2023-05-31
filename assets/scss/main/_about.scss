@@ -31,10 +31,12 @@
       padding-top: 34px;
     }
   }
+
   &__foto {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1360px;
     margin-bottom: 60px;
+    padding: 0 20px;
 
     @include lg {
       margin-bottom: 20px;

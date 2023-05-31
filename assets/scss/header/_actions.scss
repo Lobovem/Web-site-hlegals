@@ -20,26 +20,35 @@
   &__lang-link {
     padding: 4px;
 
+    transition: 0.4s;
     letter-spacing: 1px;
 
     color: $color-white;
+    border-radius: 8px;
 
     font-size: $font-size-12;
     font-weight: $font-weight-700;
     line-height: 14px;
 
-    grid-area: lang;
+    grid-area: lang;
     @include sm {
-      color: $color-grey-bg-text;
+      // color: $color-grey-bg-text;
     }
 
     &--alt {
+      transition: 0.4s;
+
       color: $color-grey-bg-text;
+      border-radius: 8px;
+
+
+
       &:hover {
         color: $color-white;
         background: $color-accent;
       }
     }
+
     &:hover {
       padding: 4px;
 
@@ -62,7 +71,7 @@
   &__address-link {
     padding: 5px;
 
-    transition: 0.2s linear;
+    transition: 0.4s;
 
     color: $color-white;
 
@@ -93,7 +102,7 @@
   &__phone-link {
     padding: 5px;
 
-    transition: 0.2s linear;
+    transition: 0.4s;
 
     color: $color-white;
 
@@ -103,7 +112,7 @@
     @include sm {
       padding: 5px 0 5px 5px;
 
-      color: $color-grey-bg-text;
+      // color: $color-grey-bg-text;
     }
 
     &--alt {
@@ -124,7 +133,8 @@
   }
 
   &__social-img {
-    transition: 0.2s linear;
+    transition: 0.4s;
+
     &:hover {
       fill: $color-accent;
     }

@@ -97,7 +97,10 @@
   }
 
   &__social-link {
-    transition: 0.2s linear;
+    display: flex;
+    align-items: center;
+
+    transition: 0.4s;
     letter-spacing: 1px;
     text-transform: uppercase;
 
@@ -106,6 +109,9 @@
     font-size: $font-size-12;
     font-weight: $font-weight-700;
     line-height: 16px;
+
+    gap: 10px;
+
     &:hover {
       color: $color-accent;
     }
@@ -118,6 +124,7 @@
 
     background: $color-grey-bg;
   }
+
   &__map {
     width: 100%;
     height: 600px;
